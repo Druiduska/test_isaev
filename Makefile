@@ -1,5 +1,4 @@
 .PHONY: default dev-setup up down shell reseed reload restart watch test
-HOST=zauberg-leader.local
 DCSERVICE=laravel.test
 PHP=php8.5
 
@@ -8,11 +7,13 @@ default:
 
 dev-setup:
 	test -f .env || cp .env.example .env
-	docker-compose build --no-cache
+	docker-compose down -v
+	docker-compose build #--no-cache
 	docker-compose up -d
 	docker-compose exec ${DCSERVICE} composer install
 	docker-compose exec ${DCSERVICE} docker/local/runtests.sh
-	docker-compose restart ${DCSERVICE}
+	docker-compose down -v
+	docker-compose up -d
 	docker-compose exec ${DCSERVICE} start-container ${PHP} artisan migrate
 	docker-compose exec ${DCSERVICE} start-container ${PHP} artisan db:seed
 
