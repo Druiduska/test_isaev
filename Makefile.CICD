@@ -1,0 +1,25 @@
+.PHONY: unit-test image-build image-test image-push image-pull-stage image-pull-prod 
+
+REGISTRY=itl-git.gitlab.yandexcloud.net:5050/
+IMAGE_BASE=cto-leader/leader-zauberg-2023
+TARGET_SERVER=proj-zauberg-leader@130.193.37.52
+
+PHPVER=8.2
+
+unit-test:
+	docker build --target=test -f ./docker/prod/${PHPVER}/Dockerfile .
+
+image-build:
+	docker build -t "${REGISTRY}${IMAGE_BASE}" --target=app --build-arg WWWGROUP=1000 -f ./docker/prod/${PHPVER}/Dockerfile .
+
+image-push:
+	docker push "${REGISTRY}${IMAGE_BASE}"
+
+image-pull-stage:
+	ssh "${TARGET_SERVER}" docker pull "${IMAGE_BASE}":latest
+
+image-pull-prod:
+	ssh "${TARGET_SERVER}" docker pull "${IMAGE_BASE}":latest
+
+image-test:
+	echo test

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app/Http/Resources/Api/V2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../../_css/bootstrap.min.css?v=11.0.12" rel="stylesheet" type="text/css">
+  <link href="../../../../_css/nv.d3.min.css?v=11.0.12" rel="stylesheet" type="text/css">
+  <link href="../../../../_css/style.css?v=11.0.12" rel="stylesheet" type="text/css">
+  <link href="../../../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../../../index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item"><a href="../../../index.html">Http</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">Resources</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Api</a></li>
+         <li class="breadcrumb-item"><a href="index.html">V2</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Calendar/ProductionCalendarResource.php.html#20">App\Http\Resources\Api\V2\Calendar\ProductionCalendarResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Department/DepartmentResource.php.html#20">App\Http\Resources\Api\V2\Department\DepartmentResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/EmployeeIndexResource.php.html#42">App\Http\Resources\Api\V2\Employee\EmployeeIndexResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/EmployeeShowResource.php.html#52">App\Http\Resources\Api\V2\Employee\EmployeeShowResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/History/DepartmentHistory/DepartmentHistoryResource.php.html#20">App\Http\Resources\Api\V2\Employee\History\DepartmentHistory\DepartmentHistoryResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/History/JobPositionHistory/JobPositionHistoryResource.php.html#20">App\Http\Resources\Api\V2\Employee\History\JobPositionHistory\JobPositionHistoryResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/EmployeeSalaryRate/RateIndexResource.php.html#22">App\Http\Resources\Api\V2\Employee\Salary\EmployeeSalaryRate\RateIndexResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/EmployeeSalaryRate/RateShowResource.php.html#22">App\Http\Resources\Api\V2\Employee\Salary\EmployeeSalaryRate\RateShowResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/EmployeeSalaryResource.php.html#29">App\Http\Resources\Api\V2\Employee\Salary\EmployeeSalaryResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/EmployeeSalaryShortResource.php.html#27">App\Http\Resources\Api\V2\Employee\Salary\EmployeeSalaryShortResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/JobPositionSalaryRate/JobPositionSalaryRateIndexResource.php.html#25">App\Http\Resources\Api\V2\Employee\Salary\JobPositionSalaryRate\JobPositionSalaryRateIndexResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/JobPositionSalaryRate/JobPositionSalaryRateShowResource.php.html#22">App\Http\Resources\Api\V2\Employee\Salary\JobPositionSalaryRate\JobPositionSalaryRateShowResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/OneTimePayment/OneTimePaymentResource.php.html#23">App\Http\Resources\Api\V2\Employee\Salary\OneTimePayment\OneTimePaymentResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/EmployeeSalaryRuleCreateResource.php.html#17">App\Http\Resources\Api\V2\Employee\Salary\Rule\EmployeeSalaryRuleCreateResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/EmployeeSalaryRuleIndexResource.php.html#26">App\Http\Resources\Api\V2\Employee\Salary\Rule\EmployeeSalaryRuleIndexResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/EmployeeSalaryRuleShowResource.php.html#45">App\Http\Resources\Api\V2\Employee\Salary\Rule\EmployeeSalaryRuleShowResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/Group/IndexEmployeeSalaryGroupRuleResource.php.html#22">App\Http\Resources\Api\V2\Employee\Salary\Rule\Group\IndexEmployeeSalaryGroupRuleResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/Group/ShowEmployeeSalaryGroupRuleResource.php.html#25">App\Http\Resources\Api\V2\Employee\Salary\Rule\Group\ShowEmployeeSalaryGroupRuleResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Visit/EmployeeVisitResource.php.html#38">App\Http\Resources\Api\V2\Employee\Visit\EmployeeVisitResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Contragent/ContragentResource.php.html#22">App\Http\Resources\Api\V2\Lookup\Contragent\ContragentResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Currency/CurrencyRateResource.php.html#22">App\Http\Resources\Api\V2\Lookup\Currency\CurrencyRateResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Currency/CurrencyResource.php.html#21">App\Http\Resources\Api\V2\Lookup\Currency\CurrencyResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/JobPosition/JobPositionResource.php.html#18">App\Http\Resources\Api\V2\Lookup\JobPosition\JobPositionResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/JobPosition/JobPositionShowWithRatesResource.php.html#22">App\Http\Resources\Api\V2\Lookup\JobPosition\JobPositionShowWithRatesResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Organization/OrganizationResource.php.html#22">App\Http\Resources\Api\V2\Lookup\Organization\OrganizationResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Partner/PartnerResource.php.html#43">App\Http\Resources\Api\V2\Lookup\Partner\PartnerResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Warehouse/WarehouseResource.php.html#20">App\Http\Resources\Api\V2\Lookup\Warehouse\WarehouseResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/ClientOrderIndexResource.php.html#96">App\Http\Resources\Api\V2\Order\Client\ClientOrderIndexResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/ClientOrderShortResource.php.html#31">App\Http\Resources\Api\V2\Order\Client\ClientOrderShortResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Comment/ClientOrderCommentIndexResource.php.html#28">App\Http\Resources\Api\V2\Order\Client\Comment\ClientOrderCommentIndexResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Comment/ClientOrderCommentShowResource.php.html#20">App\Http\Resources\Api\V2\Order\Client\Comment\ClientOrderCommentShowResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Comment/ClientOrderFilesResource.php.html#19">App\Http\Resources\Api\V2\Order\Client\Comment\ClientOrderFilesResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Version/ClientOrderPositionResource.php.html#21">App\Http\Resources\Api\V2\Order\Client\Version\ClientOrderPositionResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Version/ClientOrderVersionFullIndexResource.php.html#21">App\Http\Resources\Api\V2\Order\Client\Version\ClientOrderVersionFullIndexResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Version/ClientOrderVersionShortIndexResource.php.html#18">App\Http\Resources\Api\V2\Order\Client\Version\ClientOrderVersionShortIndexResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/File/SupplierOrderFilesResource.php.html#22">App\Http\Resources\Api\V2\Order\Supplier\File\SupplierOrderFilesResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/SupplierOrderIndexResource.php.html#70">App\Http\Resources\Api\V2\Order\Supplier\SupplierOrderIndexResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/Version/SupplierOrderPositionResource.php.html#21">App\Http\Resources\Api\V2\Order\Supplier\Version\SupplierOrderPositionResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/Version/SupplierOrderVersionFullIndexResource.php.html#21">App\Http\Resources\Api\V2\Order\Supplier\Version\SupplierOrderVersionFullIndexResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/Version/SupplierOrderVersionShortIndexResource.php.html#18">App\Http\Resources\Api\V2\Order\Supplier\Version\SupplierOrderVersionShortIndexResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/ExpenditureRequestResource.php.html#8">App\Http\Resources\Api\V2\Payment\ExpenditureRequestResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/IncomingPaymentResource.php.html#39">App\Http\Resources\Api\V2\Payment\IncomingPaymentResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/OutgoingPaymentResource.php.html#39">App\Http\Resources\Api\V2\Payment\OutgoingPaymentResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/ListFieldDescriptionSettingsResource.php.html#27">App\Http\Resources\Api\V2\Settings\ListFieldDescriptionSettingsResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/KeycloakUserResource.php.html#23">App\Http\Resources\Api\V2\User\KeycloakUserResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/UserResource.php.html#27">App\Http\Resources\Api\V2\User\UserResource</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/Traits/RuleStatusTrait.php.html#9">App\Http\Resources\Api\V2\Employee\Salary\Rule\Traits\RuleStatusTrait</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Employee/Salary/Rule/Traits/RuleStatusTrait.php.html#9">App\Http\Resources\Api\V2\Employee\Salary\Rule\Traits\RuleStatusTrait</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Employee/Visit/EmployeeVisitResource.php.html#38">App\Http\Resources\Api\V2\Employee\Visit\EmployeeVisitResource</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Order/Client/ClientOrderIndexResource.php.html#96">App\Http\Resources\Api\V2\Order\Client\ClientOrderIndexResource</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Calendar/ProductionCalendarResource.php.html#20">App\Http\Resources\Api\V2\Calendar\ProductionCalendarResource</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/Group/IndexEmployeeSalaryGroupRuleResource.php.html#22">App\Http\Resources\Api\V2\Employee\Salary\Rule\Group\IndexEmployeeSalaryGroupRuleResource</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/Group/ShowEmployeeSalaryGroupRuleResource.php.html#25">App\Http\Resources\Api\V2\Employee\Salary\Rule\Group\ShowEmployeeSalaryGroupRuleResource</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Calendar/ProductionCalendarResource.php.html#28"><abbr title="App\Http\Resources\Api\V2\Calendar\ProductionCalendarResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Department/DepartmentResource.php.html#22"><abbr title="App\Http\Resources\Api\V2\Department\DepartmentResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/EmployeeIndexResource.php.html#44"><abbr title="App\Http\Resources\Api\V2\Employee\EmployeeIndexResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/EmployeeShowResource.php.html#54"><abbr title="App\Http\Resources\Api\V2\Employee\EmployeeShowResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/History/DepartmentHistory/DepartmentHistoryResource.php.html#22"><abbr title="App\Http\Resources\Api\V2\Employee\History\DepartmentHistory\DepartmentHistoryResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/History/JobPositionHistory/JobPositionHistoryResource.php.html#22"><abbr title="App\Http\Resources\Api\V2\Employee\History\JobPositionHistory\JobPositionHistoryResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/EmployeeSalaryRate/RateIndexResource.php.html#24"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\EmployeeSalaryRate\RateIndexResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/EmployeeSalaryRate/RateShowResource.php.html#24"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\EmployeeSalaryRate\RateShowResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/EmployeeSalaryResource.php.html#31"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\EmployeeSalaryResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/EmployeeSalaryShortResource.php.html#29"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\EmployeeSalaryShortResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/JobPositionSalaryRate/JobPositionSalaryRateIndexResource.php.html#27"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\JobPositionSalaryRate\JobPositionSalaryRateIndexResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/JobPositionSalaryRate/JobPositionSalaryRateShowResource.php.html#24"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\JobPositionSalaryRate\JobPositionSalaryRateShowResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/OneTimePayment/OneTimePaymentResource.php.html#31"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\OneTimePayment\OneTimePaymentResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/EmployeeSalaryRuleCreateResource.php.html#19"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\Rule\EmployeeSalaryRuleCreateResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/EmployeeSalaryRuleIndexResource.php.html#30"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\Rule\EmployeeSalaryRuleIndexResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/EmployeeSalaryRuleShowResource.php.html#49"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\Rule\EmployeeSalaryRuleShowResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/Group/IndexEmployeeSalaryGroupRuleResource.php.html#24"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\Rule\Group\IndexEmployeeSalaryGroupRuleResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/Group/ShowEmployeeSalaryGroupRuleResource.php.html#27"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\Rule\Group\ShowEmployeeSalaryGroupRuleResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Visit/EmployeeVisitResource.php.html#46"><abbr title="App\Http\Resources\Api\V2\Employee\Visit\EmployeeVisitResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Visit/EmployeeVisitResource.php.html#68"><abbr title="App\Http\Resources\Api\V2\Employee\Visit\EmployeeVisitResource::prepareVisitsForMonth">prepareVisitsForMonth</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Contragent/ContragentResource.php.html#24"><abbr title="App\Http\Resources\Api\V2\Lookup\Contragent\ContragentResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Currency/CurrencyRateResource.php.html#24"><abbr title="App\Http\Resources\Api\V2\Lookup\Currency\CurrencyRateResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Currency/CurrencyResource.php.html#23"><abbr title="App\Http\Resources\Api\V2\Lookup\Currency\CurrencyResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/JobPosition/JobPositionResource.php.html#20"><abbr title="App\Http\Resources\Api\V2\Lookup\JobPosition\JobPositionResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/JobPosition/JobPositionShowWithRatesResource.php.html#24"><abbr title="App\Http\Resources\Api\V2\Lookup\JobPosition\JobPositionShowWithRatesResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Organization/OrganizationResource.php.html#24"><abbr title="App\Http\Resources\Api\V2\Lookup\Organization\OrganizationResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Partner/PartnerResource.php.html#45"><abbr title="App\Http\Resources\Api\V2\Lookup\Partner\PartnerResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Warehouse/WarehouseResource.php.html#22"><abbr title="App\Http\Resources\Api\V2\Lookup\Warehouse\WarehouseResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/ClientOrderIndexResource.php.html#98"><abbr title="App\Http\Resources\Api\V2\Order\Client\ClientOrderIndexResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/ClientOrderIndexResource.php.html#192"><abbr title="App\Http\Resources\Api\V2\Order\Client\ClientOrderIndexResource::calculateGrossProfit">calculateGrossProfit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/ClientOrderShortResource.php.html#33"><abbr title="App\Http\Resources\Api\V2\Order\Client\ClientOrderShortResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Comment/ClientOrderCommentIndexResource.php.html#30"><abbr title="App\Http\Resources\Api\V2\Order\Client\Comment\ClientOrderCommentIndexResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Comment/ClientOrderCommentShowResource.php.html#22"><abbr title="App\Http\Resources\Api\V2\Order\Client\Comment\ClientOrderCommentShowResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Comment/ClientOrderFilesResource.php.html#21"><abbr title="App\Http\Resources\Api\V2\Order\Client\Comment\ClientOrderFilesResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Version/ClientOrderPositionResource.php.html#28"><abbr title="App\Http\Resources\Api\V2\Order\Client\Version\ClientOrderPositionResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Version/ClientOrderVersionFullIndexResource.php.html#24"><abbr title="App\Http\Resources\Api\V2\Order\Client\Version\ClientOrderVersionFullIndexResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Version/ClientOrderVersionShortIndexResource.php.html#20"><abbr title="App\Http\Resources\Api\V2\Order\Client\Version\ClientOrderVersionShortIndexResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/File/SupplierOrderFilesResource.php.html#29"><abbr title="App\Http\Resources\Api\V2\Order\Supplier\File\SupplierOrderFilesResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/SupplierOrderIndexResource.php.html#72"><abbr title="App\Http\Resources\Api\V2\Order\Supplier\SupplierOrderIndexResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/Version/SupplierOrderPositionResource.php.html#28"><abbr title="App\Http\Resources\Api\V2\Order\Supplier\Version\SupplierOrderPositionResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/Version/SupplierOrderVersionFullIndexResource.php.html#24"><abbr title="App\Http\Resources\Api\V2\Order\Supplier\Version\SupplierOrderVersionFullIndexResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/Version/SupplierOrderVersionShortIndexResource.php.html#20"><abbr title="App\Http\Resources\Api\V2\Order\Supplier\Version\SupplierOrderVersionShortIndexResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/ExpenditureRequestResource.php.html#69"><abbr title="App\Http\Resources\Api\V2\Payment\ExpenditureRequestResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/IncomingPaymentResource.php.html#41"><abbr title="App\Http\Resources\Api\V2\Payment\IncomingPaymentResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/OutgoingPaymentResource.php.html#41"><abbr title="App\Http\Resources\Api\V2\Payment\OutgoingPaymentResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Settings/ListFieldDescriptionSettingsResource.php.html#34"><abbr title="App\Http\Resources\Api\V2\Settings\ListFieldDescriptionSettingsResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/KeycloakUserResource.php.html#30"><abbr title="App\Http\Resources\Api\V2\User\KeycloakUserResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/UserResource.php.html#34"><abbr title="App\Http\Resources\Api\V2\User\UserResource::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/Traits/RuleStatusTrait.php.html#16"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\Rule\Traits\RuleStatusTrait::calcState">calcState</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Employee/Salary/Rule/Traits/RuleStatusTrait.php.html#16"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\Rule\Traits\RuleStatusTrait::calcState">calcState</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Employee/Visit/EmployeeVisitResource.php.html#68"><abbr title="App\Http\Resources\Api\V2\Employee\Visit\EmployeeVisitResource::prepareVisitsForMonth">prepareVisitsForMonth</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Order/Client/ClientOrderIndexResource.php.html#192"><abbr title="App\Http\Resources\Api\V2\Order\Client\ClientOrderIndexResource::calculateGrossProfit">calculateGrossProfit</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Order/Client/ClientOrderIndexResource.php.html#98"><abbr title="App\Http\Resources\Api\V2\Order\Client\ClientOrderIndexResource::toArray">toArray</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Calendar/ProductionCalendarResource.php.html#28"><abbr title="App\Http\Resources\Api\V2\Calendar\ProductionCalendarResource::toArray">toArray</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/Group/IndexEmployeeSalaryGroupRuleResource.php.html#24"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\Rule\Group\IndexEmployeeSalaryGroupRuleResource::toArray">toArray</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/Group/ShowEmployeeSalaryGroupRuleResource.php.html#27"><abbr title="App\Http\Resources\Api\V2\Employee\Salary\Rule\Group\ShowEmployeeSalaryGroupRuleResource::toArray">toArray</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.12</a> using <a href="https://www.php.net/" target="_top">PHP 8.5.2</a> and <a href="https://phpunit.de/">PHPUnit 11.5.51</a> at Tue Feb 10 16:11:35 UTC 2026.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../../_js/jquery.min.js?v=11.0.12" type="text/javascript"></script>
+  <script src="../../../../_js/d3.min.js?v=11.0.12" type="text/javascript"></script>
+  <script src="../../../../_js/nv.d3.min.js?v=11.0.12" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([47,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([49,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"Calendar\/ProductionCalendarResource.php.html#20\">App\\Http\\Resources\\Api\\V2\\Calendar\\ProductionCalendarResource<\/a>"],[0,1,"<a href=\"Department\/DepartmentResource.php.html#20\">App\\Http\\Resources\\Api\\V2\\Department\\DepartmentResource<\/a>"],[0,1,"<a href=\"Employee\/EmployeeIndexResource.php.html#42\">App\\Http\\Resources\\Api\\V2\\Employee\\EmployeeIndexResource<\/a>"],[0,1,"<a href=\"Employee\/EmployeeShowResource.php.html#52\">App\\Http\\Resources\\Api\\V2\\Employee\\EmployeeShowResource<\/a>"],[0,1,"<a href=\"Employee\/History\/DepartmentHistory\/DepartmentHistoryResource.php.html#20\">App\\Http\\Resources\\Api\\V2\\Employee\\History\\DepartmentHistory\\DepartmentHistoryResource<\/a>"],[0,1,"<a href=\"Employee\/History\/JobPositionHistory\/JobPositionHistoryResource.php.html#20\">App\\Http\\Resources\\Api\\V2\\Employee\\History\\JobPositionHistory\\JobPositionHistoryResource<\/a>"],[0,1,"<a href=\"Employee\/Salary\/EmployeeSalaryRate\/RateIndexResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\EmployeeSalaryRate\\RateIndexResource<\/a>"],[0,1,"<a href=\"Employee\/Salary\/EmployeeSalaryRate\/RateShowResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\EmployeeSalaryRate\\RateShowResource<\/a>"],[0,1,"<a href=\"Employee\/Salary\/EmployeeSalaryResource.php.html#29\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\EmployeeSalaryResource<\/a>"],[0,1,"<a href=\"Employee\/Salary\/EmployeeSalaryShortResource.php.html#27\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\EmployeeSalaryShortResource<\/a>"],[0,1,"<a href=\"Employee\/Salary\/JobPositionSalaryRate\/JobPositionSalaryRateIndexResource.php.html#25\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\JobPositionSalaryRate\\JobPositionSalaryRateIndexResource<\/a>"],[0,1,"<a href=\"Employee\/Salary\/JobPositionSalaryRate\/JobPositionSalaryRateShowResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\JobPositionSalaryRate\\JobPositionSalaryRateShowResource<\/a>"],[0,1,"<a href=\"Employee\/Salary\/OneTimePayment\/OneTimePaymentResource.php.html#23\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\OneTimePayment\\OneTimePaymentResource<\/a>"],[0,1,"<a href=\"Employee\/Salary\/Rule\/EmployeeSalaryRuleCreateResource.php.html#17\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\Rule\\EmployeeSalaryRuleCreateResource<\/a>"],[0,1,"<a href=\"Employee\/Salary\/Rule\/EmployeeSalaryRuleIndexResource.php.html#26\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\Rule\\EmployeeSalaryRuleIndexResource<\/a>"],[0,1,"<a href=\"Employee\/Salary\/Rule\/EmployeeSalaryRuleShowResource.php.html#45\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\Rule\\EmployeeSalaryRuleShowResource<\/a>"],[0,2,"<a href=\"Employee\/Salary\/Rule\/Group\/IndexEmployeeSalaryGroupRuleResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\Rule\\Group\\IndexEmployeeSalaryGroupRuleResource<\/a>"],[0,2,"<a href=\"Employee\/Salary\/Rule\/Group\/ShowEmployeeSalaryGroupRuleResource.php.html#25\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\Rule\\Group\\ShowEmployeeSalaryGroupRuleResource<\/a>"],[0,8,"<a href=\"Employee\/Visit\/EmployeeVisitResource.php.html#38\">App\\Http\\Resources\\Api\\V2\\Employee\\Visit\\EmployeeVisitResource<\/a>"],[0,1,"<a href=\"Lookup\/Contragent\/ContragentResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Lookup\\Contragent\\ContragentResource<\/a>"],[0,1,"<a href=\"Lookup\/Currency\/CurrencyRateResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Lookup\\Currency\\CurrencyRateResource<\/a>"],[0,1,"<a href=\"Lookup\/Currency\/CurrencyResource.php.html#21\">App\\Http\\Resources\\Api\\V2\\Lookup\\Currency\\CurrencyResource<\/a>"],[0,1,"<a href=\"Lookup\/JobPosition\/JobPositionResource.php.html#18\">App\\Http\\Resources\\Api\\V2\\Lookup\\JobPosition\\JobPositionResource<\/a>"],[0,1,"<a href=\"Lookup\/JobPosition\/JobPositionShowWithRatesResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Lookup\\JobPosition\\JobPositionShowWithRatesResource<\/a>"],[0,1,"<a href=\"Lookup\/Organization\/OrganizationResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Lookup\\Organization\\OrganizationResource<\/a>"],[0,1,"<a href=\"Lookup\/Partner\/PartnerResource.php.html#43\">App\\Http\\Resources\\Api\\V2\\Lookup\\Partner\\PartnerResource<\/a>"],[0,1,"<a href=\"Lookup\/Warehouse\/WarehouseResource.php.html#20\">App\\Http\\Resources\\Api\\V2\\Lookup\\Warehouse\\WarehouseResource<\/a>"],[0,7,"<a href=\"Order\/Client\/ClientOrderIndexResource.php.html#96\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\ClientOrderIndexResource<\/a>"],[0,1,"<a href=\"Order\/Client\/ClientOrderShortResource.php.html#31\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\ClientOrderShortResource<\/a>"],[0,1,"<a href=\"Order\/Client\/Comment\/ClientOrderCommentIndexResource.php.html#28\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\Comment\\ClientOrderCommentIndexResource<\/a>"],[0,1,"<a href=\"Order\/Client\/Comment\/ClientOrderCommentShowResource.php.html#20\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\Comment\\ClientOrderCommentShowResource<\/a>"],[0,1,"<a href=\"Order\/Client\/Comment\/ClientOrderFilesResource.php.html#19\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\Comment\\ClientOrderFilesResource<\/a>"],[0,1,"<a href=\"Order\/Client\/Version\/ClientOrderPositionResource.php.html#21\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\Version\\ClientOrderPositionResource<\/a>"],[0,1,"<a href=\"Order\/Client\/Version\/ClientOrderVersionFullIndexResource.php.html#21\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\Version\\ClientOrderVersionFullIndexResource<\/a>"],[0,1,"<a href=\"Order\/Client\/Version\/ClientOrderVersionShortIndexResource.php.html#18\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\Version\\ClientOrderVersionShortIndexResource<\/a>"],[0,1,"<a href=\"Order\/Supplier\/File\/SupplierOrderFilesResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Order\\Supplier\\File\\SupplierOrderFilesResource<\/a>"],[0,1,"<a href=\"Order\/Supplier\/SupplierOrderIndexResource.php.html#70\">App\\Http\\Resources\\Api\\V2\\Order\\Supplier\\SupplierOrderIndexResource<\/a>"],[0,1,"<a href=\"Order\/Supplier\/Version\/SupplierOrderPositionResource.php.html#21\">App\\Http\\Resources\\Api\\V2\\Order\\Supplier\\Version\\SupplierOrderPositionResource<\/a>"],[0,1,"<a href=\"Order\/Supplier\/Version\/SupplierOrderVersionFullIndexResource.php.html#21\">App\\Http\\Resources\\Api\\V2\\Order\\Supplier\\Version\\SupplierOrderVersionFullIndexResource<\/a>"],[0,1,"<a href=\"Order\/Supplier\/Version\/SupplierOrderVersionShortIndexResource.php.html#18\">App\\Http\\Resources\\Api\\V2\\Order\\Supplier\\Version\\SupplierOrderVersionShortIndexResource<\/a>"],[0,1,"<a href=\"Payment\/ExpenditureRequestResource.php.html#8\">App\\Http\\Resources\\Api\\V2\\Payment\\ExpenditureRequestResource<\/a>"],[0,1,"<a href=\"Payment\/IncomingPaymentResource.php.html#39\">App\\Http\\Resources\\Api\\V2\\Payment\\IncomingPaymentResource<\/a>"],[0,1,"<a href=\"Payment\/OutgoingPaymentResource.php.html#39\">App\\Http\\Resources\\Api\\V2\\Payment\\OutgoingPaymentResource<\/a>"],[0,1,"<a href=\"Settings\/ListFieldDescriptionSettingsResource.php.html#27\">App\\Http\\Resources\\Api\\V2\\Settings\\ListFieldDescriptionSettingsResource<\/a>"],[0,1,"<a href=\"User\/KeycloakUserResource.php.html#23\">App\\Http\\Resources\\Api\\V2\\User\\KeycloakUserResource<\/a>"],[0,1,"<a href=\"User\/UserResource.php.html#27\">App\\Http\\Resources\\Api\\V2\\User\\UserResource<\/a>"],[0,12,"<a href=\"Employee\/Salary\/Rule\/Traits\/RuleStatusTrait.php.html#9\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\Rule\\Traits\\RuleStatusTrait<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"Calendar\/ProductionCalendarResource.php.html#28\">App\\Http\\Resources\\Api\\V2\\Calendar\\ProductionCalendarResource::toArray<\/a>"],[0,1,"<a href=\"Department\/DepartmentResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Department\\DepartmentResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/EmployeeIndexResource.php.html#44\">App\\Http\\Resources\\Api\\V2\\Employee\\EmployeeIndexResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/EmployeeShowResource.php.html#54\">App\\Http\\Resources\\Api\\V2\\Employee\\EmployeeShowResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/History\/DepartmentHistory\/DepartmentHistoryResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Employee\\History\\DepartmentHistory\\DepartmentHistoryResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/History\/JobPositionHistory\/JobPositionHistoryResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Employee\\History\\JobPositionHistory\\JobPositionHistoryResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/Salary\/EmployeeSalaryRate\/RateIndexResource.php.html#24\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\EmployeeSalaryRate\\RateIndexResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/Salary\/EmployeeSalaryRate\/RateShowResource.php.html#24\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\EmployeeSalaryRate\\RateShowResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/Salary\/EmployeeSalaryResource.php.html#31\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\EmployeeSalaryResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/Salary\/EmployeeSalaryShortResource.php.html#29\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\EmployeeSalaryShortResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/Salary\/JobPositionSalaryRate\/JobPositionSalaryRateIndexResource.php.html#27\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\JobPositionSalaryRate\\JobPositionSalaryRateIndexResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/Salary\/JobPositionSalaryRate\/JobPositionSalaryRateShowResource.php.html#24\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\JobPositionSalaryRate\\JobPositionSalaryRateShowResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/Salary\/OneTimePayment\/OneTimePaymentResource.php.html#31\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\OneTimePayment\\OneTimePaymentResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/Salary\/Rule\/EmployeeSalaryRuleCreateResource.php.html#19\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\Rule\\EmployeeSalaryRuleCreateResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/Salary\/Rule\/EmployeeSalaryRuleIndexResource.php.html#30\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\Rule\\EmployeeSalaryRuleIndexResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/Salary\/Rule\/EmployeeSalaryRuleShowResource.php.html#49\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\Rule\\EmployeeSalaryRuleShowResource::toArray<\/a>"],[0,2,"<a href=\"Employee\/Salary\/Rule\/Group\/IndexEmployeeSalaryGroupRuleResource.php.html#24\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\Rule\\Group\\IndexEmployeeSalaryGroupRuleResource::toArray<\/a>"],[0,2,"<a href=\"Employee\/Salary\/Rule\/Group\/ShowEmployeeSalaryGroupRuleResource.php.html#27\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\Rule\\Group\\ShowEmployeeSalaryGroupRuleResource::toArray<\/a>"],[0,1,"<a href=\"Employee\/Visit\/EmployeeVisitResource.php.html#46\">App\\Http\\Resources\\Api\\V2\\Employee\\Visit\\EmployeeVisitResource::toArray<\/a>"],[0,7,"<a href=\"Employee\/Visit\/EmployeeVisitResource.php.html#68\">App\\Http\\Resources\\Api\\V2\\Employee\\Visit\\EmployeeVisitResource::prepareVisitsForMonth<\/a>"],[0,1,"<a href=\"Lookup\/Contragent\/ContragentResource.php.html#24\">App\\Http\\Resources\\Api\\V2\\Lookup\\Contragent\\ContragentResource::toArray<\/a>"],[0,1,"<a href=\"Lookup\/Currency\/CurrencyRateResource.php.html#24\">App\\Http\\Resources\\Api\\V2\\Lookup\\Currency\\CurrencyRateResource::toArray<\/a>"],[0,1,"<a href=\"Lookup\/Currency\/CurrencyResource.php.html#23\">App\\Http\\Resources\\Api\\V2\\Lookup\\Currency\\CurrencyResource::toArray<\/a>"],[0,1,"<a href=\"Lookup\/JobPosition\/JobPositionResource.php.html#20\">App\\Http\\Resources\\Api\\V2\\Lookup\\JobPosition\\JobPositionResource::toArray<\/a>"],[0,1,"<a href=\"Lookup\/JobPosition\/JobPositionShowWithRatesResource.php.html#24\">App\\Http\\Resources\\Api\\V2\\Lookup\\JobPosition\\JobPositionShowWithRatesResource::toArray<\/a>"],[0,1,"<a href=\"Lookup\/Organization\/OrganizationResource.php.html#24\">App\\Http\\Resources\\Api\\V2\\Lookup\\Organization\\OrganizationResource::toArray<\/a>"],[0,1,"<a href=\"Lookup\/Partner\/PartnerResource.php.html#45\">App\\Http\\Resources\\Api\\V2\\Lookup\\Partner\\PartnerResource::toArray<\/a>"],[0,1,"<a href=\"Lookup\/Warehouse\/WarehouseResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Lookup\\Warehouse\\WarehouseResource::toArray<\/a>"],[0,3,"<a href=\"Order\/Client\/ClientOrderIndexResource.php.html#98\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\ClientOrderIndexResource::toArray<\/a>"],[0,4,"<a href=\"Order\/Client\/ClientOrderIndexResource.php.html#192\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\ClientOrderIndexResource::calculateGrossProfit<\/a>"],[0,1,"<a href=\"Order\/Client\/ClientOrderShortResource.php.html#33\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\ClientOrderShortResource::toArray<\/a>"],[0,1,"<a href=\"Order\/Client\/Comment\/ClientOrderCommentIndexResource.php.html#30\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\Comment\\ClientOrderCommentIndexResource::toArray<\/a>"],[0,1,"<a href=\"Order\/Client\/Comment\/ClientOrderCommentShowResource.php.html#22\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\Comment\\ClientOrderCommentShowResource::toArray<\/a>"],[0,1,"<a href=\"Order\/Client\/Comment\/ClientOrderFilesResource.php.html#21\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\Comment\\ClientOrderFilesResource::toArray<\/a>"],[0,1,"<a href=\"Order\/Client\/Version\/ClientOrderPositionResource.php.html#28\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\Version\\ClientOrderPositionResource::toArray<\/a>"],[0,1,"<a href=\"Order\/Client\/Version\/ClientOrderVersionFullIndexResource.php.html#24\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\Version\\ClientOrderVersionFullIndexResource::toArray<\/a>"],[0,1,"<a href=\"Order\/Client\/Version\/ClientOrderVersionShortIndexResource.php.html#20\">App\\Http\\Resources\\Api\\V2\\Order\\Client\\Version\\ClientOrderVersionShortIndexResource::toArray<\/a>"],[0,1,"<a href=\"Order\/Supplier\/File\/SupplierOrderFilesResource.php.html#29\">App\\Http\\Resources\\Api\\V2\\Order\\Supplier\\File\\SupplierOrderFilesResource::toArray<\/a>"],[0,1,"<a href=\"Order\/Supplier\/SupplierOrderIndexResource.php.html#72\">App\\Http\\Resources\\Api\\V2\\Order\\Supplier\\SupplierOrderIndexResource::toArray<\/a>"],[0,1,"<a href=\"Order\/Supplier\/Version\/SupplierOrderPositionResource.php.html#28\">App\\Http\\Resources\\Api\\V2\\Order\\Supplier\\Version\\SupplierOrderPositionResource::toArray<\/a>"],[0,1,"<a href=\"Order\/Supplier\/Version\/SupplierOrderVersionFullIndexResource.php.html#24\">App\\Http\\Resources\\Api\\V2\\Order\\Supplier\\Version\\SupplierOrderVersionFullIndexResource::toArray<\/a>"],[0,1,"<a href=\"Order\/Supplier\/Version\/SupplierOrderVersionShortIndexResource.php.html#20\">App\\Http\\Resources\\Api\\V2\\Order\\Supplier\\Version\\SupplierOrderVersionShortIndexResource::toArray<\/a>"],[0,1,"<a href=\"Payment\/ExpenditureRequestResource.php.html#69\">App\\Http\\Resources\\Api\\V2\\Payment\\ExpenditureRequestResource::toArray<\/a>"],[0,1,"<a href=\"Payment\/IncomingPaymentResource.php.html#41\">App\\Http\\Resources\\Api\\V2\\Payment\\IncomingPaymentResource::toArray<\/a>"],[0,1,"<a href=\"Payment\/OutgoingPaymentResource.php.html#41\">App\\Http\\Resources\\Api\\V2\\Payment\\OutgoingPaymentResource::toArray<\/a>"],[0,1,"<a href=\"Settings\/ListFieldDescriptionSettingsResource.php.html#34\">App\\Http\\Resources\\Api\\V2\\Settings\\ListFieldDescriptionSettingsResource::toArray<\/a>"],[0,1,"<a href=\"User\/KeycloakUserResource.php.html#30\">App\\Http\\Resources\\Api\\V2\\User\\KeycloakUserResource::toArray<\/a>"],[0,1,"<a href=\"User\/UserResource.php.html#34\">App\\Http\\Resources\\Api\\V2\\User\\UserResource::toArray<\/a>"],[0,12,"<a href=\"Employee\/Salary\/Rule\/Traits\/RuleStatusTrait.php.html#16\">App\\Http\\Resources\\Api\\V2\\Employee\\Salary\\Rule\\Traits\\RuleStatusTrait::calcState<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

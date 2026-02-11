@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/app/Dto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css?v=11.0.12" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css?v=11.0.12" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css?v=11.0.12" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">/var/www/html/app</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Dto</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Department/DepartmentDto.php.html#10">App\Dto\Department\DepartmentDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/EmployeeDto.php.html#11">App\Dto\Employee\EmployeeDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/EmployeeSalaryDto.php.html#11">App\Dto\Employee\Salary\EmployeeSalaryDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/EmployeeSalaryRate/EmployeeSalaryRateDto.php.html#11">App\Dto\Employee\Salary\EmployeeSalaryRate\EmployeeSalaryRateDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/JobPositionSalaryRate/JobPositionSalaryRateDto.php.html#11">App\Dto\Employee\Salary\JobPositionSalaryRate\JobPositionSalaryRateDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/OneTimePayment/OneTimePaymentDto.php.html#11">App\Dto\Employee\Salary\OneTimePayment\OneTimePaymentDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/EmployeeSalaryRuleDto.php.html#11">App\Dto\Employee\Salary\Rule\EmployeeSalaryRuleDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/Group/EmployeeSalaryGroupRuleDto.php.html#10">App\Dto\Employee\Salary\Rule\Group\EmployeeSalaryGroupRuleDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/SalaryProcessorDto.php.html#11">App\Dto\Employee\Salary\SalaryProcessorDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Visit/EmployeeVisitDto.php.html#11">App\Dto\Employee\Visit\EmployeeVisitDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Department/DepartmentDtoFromArray.php.html#10">App\Dto\Factory\Department\DepartmentDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Department/DepartmentDtoFromEntityArray.php.html#10">App\Dto\Factory\Department\DepartmentDtoFromEntityArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/EmployeeDtoArrayFactory.php.html#7">App\Dto\Factory\Employee\EmployeeDtoArrayFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/EmployeeDtoFromArray.php.html#11">App\Dto\Factory\Employee\EmployeeDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/EmployeeDtoFromEntityArray.php.html#10">App\Dto\Factory\Employee\EmployeeDtoFromEntityArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/EmployeeSalaryDtoFromArray.php.html#10">App\Dto\Factory\Employee\Salary\EmployeeSalaryDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/EmployeeSalaryRate/EmployeeSalaryRateDtoFromArray.php.html#10">App\Dto\Factory\Employee\Salary\EmployeeSalaryRate\EmployeeSalaryRateDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/JobPositionSalaryRate/JobPositionSalaryRateDtoFromArray.php.html#11">App\Dto\Factory\Employee\Salary\JobPositionSalaryRate\JobPositionSalaryRateDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/OneTimePayment/OneTimePaymentDtoFromArray.php.html#11">App\Dto\Factory\Employee\Salary\OneTimePayment\OneTimePaymentDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/Rule/EmployeeSalaryRuleDtoFromArray.php.html#10">App\Dto\Factory\Employee\Salary\Rule\EmployeeSalaryRuleDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/Rule/Group/EmployeeSalaryGroupRuleDtoFromArray.php.html#10">App\Dto\Factory\Employee\Salary\Rule\Group\EmployeeSalaryGroupRuleDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Visit/EmployeeVisitDtoArrayFromArray.php.html#10">App\Dto\Factory\Employee\Visit\EmployeeVisitDtoArrayFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Contragent/ContragentBankDtoFromArray.php.html#10">App\Dto\Factory\Lookup\Contragent\ContragentBankDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Contragent/ContragentBankDtoFromEntityArray.php.html#10">App\Dto\Factory\Lookup\Contragent\ContragentBankDtoFromEntityArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Contragent/ContragentDtoFromArray.php.html#10">App\Dto\Factory\Lookup\Contragent\ContragentDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Contragent/ContragentDtoFromEntityArray.php.html#10">App\Dto\Factory\Lookup\Contragent\ContragentDtoFromEntityArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Currency/CurrencyDtoFromArray.php.html#10">App\Dto\Factory\Lookup\Currency\CurrencyDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Currency/CurrencyRateDtoFromArray.php.html#10">App\Dto\Factory\Lookup\Currency\CurrencyRateDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/JobPosition/JobPositionDtoArrayFactory.php.html#7">App\Dto\Factory\Lookup\JobPosition\JobPositionDtoArrayFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/JobPosition/JobPositionDtoFromArray.php.html#11">App\Dto\Factory\Lookup\JobPosition\JobPositionDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/JobPosition/JobPositionDtoFromEntityArray.php.html#11">App\Dto\Factory\Lookup\JobPosition\JobPositionDtoFromEntityArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Organization/OrganizationDtoFromArray.php.html#10">App\Dto\Factory\Lookup\Organization\OrganizationDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Organization/OrganizationDtoFromEntityArray.php.html#10">App\Dto\Factory\Lookup\Organization\OrganizationDtoFromEntityArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Partner/PartnerDtoFromArray.php.html#11">App\Dto\Factory\Lookup\Partner\PartnerDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Partner/PartnerDtoFromEntityArray.php.html#11">App\Dto\Factory\Lookup\Partner\PartnerDtoFromEntityArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Payment/CashFlowDtoFromArray.php.html#10">App\Dto\Factory\Lookup\Payment\CashFlowDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Payment/CashFlowDtoFromEntityItemArray.php.html#10">App\Dto\Factory\Lookup\Payment\CashFlowDtoFromEntityItemArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Payment/PaymentTypeDtoFromArray.php.html#10">App\Dto\Factory\Lookup\Payment\PaymentTypeDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Payment/PaymentTypeDtoFromEntityArray.php.html#10">App\Dto\Factory\Lookup\Payment\PaymentTypeDtoFromEntityArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Warehouse/WarehouseDtoFromArray.php.html#10">App\Dto\Factory\Lookup\Warehouse\WarehouseDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Warehouse/WarehouseDtoFromEntityArray.php.html#11">App\Dto\Factory\Lookup\Warehouse\WarehouseDtoFromEntityArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFrom1cArray.php.html#15">App\Dto\Factory\Order\Client\ClientOrderDtoFrom1cArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFromArray.php.html#14">App\Dto\Factory\Order\Client\ClientOrderDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/Comment/ClientOrderCommentDtoFromRequest.php.html#11">App\Dto\Factory\Order\Client\Comment\ClientOrderCommentDtoFromRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/Version/ClientOrderPositionDtoFromArray.php.html#5">App\Dto\Factory\Order\Client\Version\ClientOrderPositionDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/Version/ClientOrderPositionDtoFromPost.php.html#7">App\Dto\Factory\Order\Client\Version\ClientOrderPositionDtoFromPost</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Supplier/File/SupplierOrderFileDtoFromArray.php.html#10">App\Dto\Factory\Order\Supplier\File\SupplierOrderFileDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Supplier/SupplierOrderDtoFromArray.php.html#13">App\Dto\Factory\Order\Supplier\SupplierOrderDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Supplier/Version/SupplierOrderPositionDtoFromArray.php.html#10">App\Dto\Factory\Order\Supplier\Version\SupplierOrderPositionDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Supplier/Version/SupplierOrderPositionDtoFromPost.php.html#10">App\Dto\Factory\Order\Supplier\Version\SupplierOrderPositionDtoFromPost</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Payment/ExpenditureRequest/ExpenditureRequestDtoFromArray.php.html#11">App\Dto\Factory\Payment\ExpenditureRequest\ExpenditureRequestDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Payment/ExpenditureRequest/ExpenditureRequestDtoFromEntityArray.php.html#14">App\Dto\Factory\Payment\ExpenditureRequest\ExpenditureRequestDtoFromEntityArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Payment/IncomingPaymentDtoFromArray.php.html#10">App\Dto\Factory\Payment\IncomingPaymentDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Payment/IncomingPaymentItemsDtoFromArray.php.html#10">App\Dto\Factory\Payment\IncomingPaymentItemsDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Payment/OutgoingPaymentDtoFromArray.php.html#10">App\Dto\Factory\Payment\OutgoingPaymentDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Payment/OutgoingPaymentDtoItemsFromArray.php.html#10">App\Dto\Factory\Payment\OutgoingPaymentDtoItemsFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/User/KeycloakUserDtoFromArray.php.html#10">App\Dto\Factory\User\KeycloakUserDtoFromArray</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Contragent/ContragentBankDto.php.html#11">App\Dto\Lookup\Contragent\ContragentBankDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Contragent/ContragentDto.php.html#11">App\Dto\Lookup\Contragent\ContragentDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Currency/CurrencyDto.php.html#11">App\Dto\Lookup\Currency\CurrencyDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Currency/CurrencyRateDto.php.html#11">App\Dto\Lookup\Currency\CurrencyRateDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/JobPosition/JobPositionDto.php.html#10">App\Dto\Lookup\JobPosition\JobPositionDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Organization/OrganizationDto.php.html#11">App\Dto\Lookup\Organization\OrganizationDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Partner/PartnerDto.php.html#11">App\Dto\Lookup\Partner\PartnerDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Payment/CashFlowDto.php.html#11">App\Dto\Lookup\Payment\CashFlowDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Payment/PaymentTypeDto.php.html#11">App\Dto\Lookup\Payment\PaymentTypeDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Warehouse/WarehouseDto.php.html#11">App\Dto\Lookup\Warehouse\WarehouseDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/ClientOrderDto.php.html#11">App\Dto\Order\Client\ClientOrderDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Comment/ClientOrderCommentDto.php.html#10">App\Dto\Order\Client\Comment\ClientOrderCommentDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Version/ClientOrderPositionDto.php.html#7">App\Dto\Order\Client\Version\ClientOrderPositionDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/File/SupplierOrderFileDto.php.html#11">App\Dto\Order\Supplier\File\SupplierOrderFileDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/SupplierOrderDto.php.html#11">App\Dto\Order\Supplier\SupplierOrderDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/Version/SupplierOrderPositionDto.php.html#10">App\Dto\Order\Supplier\Version\SupplierOrderPositionDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/ExpenditureRequest/ExpenditureRequestDto.php.html#12">App\Dto\Payment\ExpenditureRequest\ExpenditureRequestDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/IncomingPaymentDto.php.html#15">App\Dto\Payment\IncomingPaymentDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/IncomingPaymentItemsDto.php.html#12">App\Dto\Payment\IncomingPaymentItemsDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/OutgoingPaymentDto.php.html#15">App\Dto\Payment\OutgoingPaymentDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/OutgoingPaymentItemsDto.php.html#12">App\Dto\Payment\OutgoingPaymentItemsDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/KeycloakUserDto.php.html#11">App\Dto\User\KeycloakUserDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/ToArrayTrait.php.html#5">App\Dto\Traits\ToArrayTrait</a></td><td class="text-right">54%</td></tr>
+       <tr><td><a href="Factory/Product/Category/CategoryDtoFromArray.php.html#10">App\Dto\Factory\Product\Category\CategoryDtoFromArray</a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFrom1cArray.php.html#15">App\Dto\Factory\Order\Client\ClientOrderDtoFrom1cArray</a></td><td class="text-right">812</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFromArray.php.html#14">App\Dto\Factory\Order\Client\ClientOrderDtoFromArray</a></td><td class="text-right">756</td></tr>
+       <tr><td><a href="Factory/Payment/ExpenditureRequest/ExpenditureRequestDtoFromEntityArray.php.html#14">App\Dto\Factory\Payment\ExpenditureRequest\ExpenditureRequestDtoFromEntityArray</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Factory/Lookup/Partner/PartnerDtoFromEntityArray.php.html#11">App\Dto\Factory\Lookup\Partner\PartnerDtoFromEntityArray</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Factory/Department/DepartmentDtoFromArray.php.html#10">App\Dto\Factory\Department\DepartmentDtoFromArray</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Department/DepartmentDtoFromEntityArray.php.html#10">App\Dto\Factory\Department\DepartmentDtoFromEntityArray</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Employee/EmployeeDtoFromEntityArray.php.html#10">App\Dto\Factory\Employee\EmployeeDtoFromEntityArray</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Lookup/Contragent/ContragentBankDtoFromEntityArray.php.html#10">App\Dto\Factory\Lookup\Contragent\ContragentBankDtoFromEntityArray</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Lookup/Payment/CashFlowDtoFromEntityItemArray.php.html#10">App\Dto\Factory\Lookup\Payment\CashFlowDtoFromEntityItemArray</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Lookup/Payment/PaymentTypeDtoFromEntityArray.php.html#10">App\Dto\Factory\Lookup\Payment\PaymentTypeDtoFromEntityArray</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Lookup/Warehouse/WarehouseDtoFromEntityArray.php.html#11">App\Dto\Factory\Lookup\Warehouse\WarehouseDtoFromEntityArray</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Traits/ToArrayTrait.php.html#5">App\Dto\Traits\ToArrayTrait</a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/Rule/EmployeeSalaryRuleDtoFromArray.php.html#10">App\Dto\Factory\Employee\Salary\Rule\EmployeeSalaryRuleDtoFromArray</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Lookup/Contragent/ContragentDtoFromEntityArray.php.html#10">App\Dto\Factory\Lookup\Contragent\ContragentDtoFromEntityArray</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Lookup/JobPosition/JobPositionDtoFromEntityArray.php.html#11">App\Dto\Factory\Lookup\JobPosition\JobPositionDtoFromEntityArray</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Lookup/Organization/OrganizationDtoFromEntityArray.php.html#10">App\Dto\Factory\Lookup\Organization\OrganizationDtoFromEntityArray</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Lookup/Partner/PartnerDtoFromArray.php.html#11">App\Dto\Factory\Lookup\Partner\PartnerDtoFromArray</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Payment/ExpenditureRequest/ExpenditureRequestDtoFromArray.php.html#11">App\Dto\Factory\Payment\ExpenditureRequest\ExpenditureRequestDtoFromArray</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Product/Category/CategoryDtoFromArray.php.html#10">App\Dto\Factory\Product\Category\CategoryDtoFromArray</a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Department/DepartmentDto.php.html#18"><abbr title="App\Dto\Department\DepartmentDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/EmployeeDto.php.html#25"><abbr title="App\Dto\Employee\EmployeeDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/EmployeeSalaryDto.php.html#30"><abbr title="App\Dto\Employee\Salary\EmployeeSalaryDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/EmployeeSalaryRate/EmployeeSalaryRateDto.php.html#23"><abbr title="App\Dto\Employee\Salary\EmployeeSalaryRate\EmployeeSalaryRateDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/JobPositionSalaryRate/JobPositionSalaryRateDto.php.html#23"><abbr title="App\Dto\Employee\Salary\JobPositionSalaryRate\JobPositionSalaryRateDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/OneTimePayment/OneTimePaymentDto.php.html#22"><abbr title="App\Dto\Employee\Salary\OneTimePayment\OneTimePaymentDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/EmployeeSalaryRuleDto.php.html#27"><abbr title="App\Dto\Employee\Salary\Rule\EmployeeSalaryRuleDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/Rule/Group/EmployeeSalaryGroupRuleDto.php.html#21"><abbr title="App\Dto\Employee\Salary\Rule\Group\EmployeeSalaryGroupRuleDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Salary/SalaryProcessorDto.php.html#21"><abbr title="App\Dto\Employee\Salary\SalaryProcessorDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Employee/Visit/EmployeeVisitDto.php.html#20"><abbr title="App\Dto\Employee\Visit\EmployeeVisitDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Department/DepartmentDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Department\DepartmentDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Department/DepartmentDtoFromEntityArray.php.html#16"><abbr title="App\Dto\Factory\Department\DepartmentDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/EmployeeDtoArrayFactory.php.html#15"><abbr title="App\Dto\Factory\Employee\EmployeeDtoArrayFactory::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/EmployeeDtoFromArray.php.html#20"><abbr title="App\Dto\Factory\Employee\EmployeeDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/EmployeeDtoFromEntityArray.php.html#19"><abbr title="App\Dto\Factory\Employee\EmployeeDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/EmployeeSalaryDtoFromArray.php.html#19"><abbr title="App\Dto\Factory\Employee\Salary\EmployeeSalaryDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/EmployeeSalaryRate/EmployeeSalaryRateDtoFromArray.php.html#19"><abbr title="App\Dto\Factory\Employee\Salary\EmployeeSalaryRate\EmployeeSalaryRateDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/JobPositionSalaryRate/JobPositionSalaryRateDtoFromArray.php.html#20"><abbr title="App\Dto\Factory\Employee\Salary\JobPositionSalaryRate\JobPositionSalaryRateDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/OneTimePayment/OneTimePaymentDtoFromArray.php.html#20"><abbr title="App\Dto\Factory\Employee\Salary\OneTimePayment\OneTimePaymentDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/Rule/EmployeeSalaryRuleDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Employee\Salary\Rule\EmployeeSalaryRuleDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/Rule/Group/EmployeeSalaryGroupRuleDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Employee\Salary\Rule\Group\EmployeeSalaryGroupRuleDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Employee/Visit/EmployeeVisitDtoArrayFromArray.php.html#19"><abbr title="App\Dto\Factory\Employee\Visit\EmployeeVisitDtoArrayFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Contragent/ContragentBankDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Lookup\Contragent\ContragentBankDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Contragent/ContragentBankDtoFromEntityArray.php.html#18"><abbr title="App\Dto\Factory\Lookup\Contragent\ContragentBankDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Contragent/ContragentDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Lookup\Contragent\ContragentDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Contragent/ContragentDtoFromEntityArray.php.html#16"><abbr title="App\Dto\Factory\Lookup\Contragent\ContragentDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Currency/CurrencyDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Lookup\Currency\CurrencyDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Currency/CurrencyRateDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Lookup\Currency\CurrencyRateDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/JobPosition/JobPositionDtoArrayFactory.php.html#15"><abbr title="App\Dto\Factory\Lookup\JobPosition\JobPositionDtoArrayFactory::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/JobPosition/JobPositionDtoFromArray.php.html#19"><abbr title="App\Dto\Factory\Lookup\JobPosition\JobPositionDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/JobPosition/JobPositionDtoFromEntityArray.php.html#17"><abbr title="App\Dto\Factory\Lookup\JobPosition\JobPositionDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Organization/OrganizationDtoFromArray.php.html#12"><abbr title="App\Dto\Factory\Lookup\Organization\OrganizationDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Organization/OrganizationDtoFromEntityArray.php.html#16"><abbr title="App\Dto\Factory\Lookup\Organization\OrganizationDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Partner/PartnerDtoFromArray.php.html#13"><abbr title="App\Dto\Factory\Lookup\Partner\PartnerDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Partner/PartnerDtoFromEntityArray.php.html#15"><abbr title="App\Dto\Factory\Lookup\Partner\PartnerDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Payment/CashFlowDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Lookup\Payment\CashFlowDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Payment/CashFlowDtoFromEntityItemArray.php.html#18"><abbr title="App\Dto\Factory\Lookup\Payment\CashFlowDtoFromEntityItemArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Payment/PaymentTypeDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Lookup\Payment\PaymentTypeDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Payment/PaymentTypeDtoFromEntityArray.php.html#18"><abbr title="App\Dto\Factory\Lookup\Payment\PaymentTypeDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Warehouse/WarehouseDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Lookup\Warehouse\WarehouseDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Lookup/Warehouse/WarehouseDtoFromEntityArray.php.html#19"><abbr title="App\Dto\Factory\Lookup\Warehouse\WarehouseDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFrom1cArray.php.html#23"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFrom1cArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFrom1cArray.php.html#83"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFrom1cArray::paymentTypeSlugToId">paymentTypeSlugToId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFrom1cArray.php.html#99"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFrom1cArray::deliveryTypeSlugToId">deliveryTypeSlugToId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFrom1cArray.php.html#113"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFrom1cArray::deliveryStatusSlugToId">deliveryStatusSlugToId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFrom1cArray.php.html#123"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFrom1cArray::statusTypeSlugToId">statusTypeSlugToId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFromArray.php.html#22"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFromArray.php.html#73"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFromArray::paymentTypeSlugToId">paymentTypeSlugToId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFromArray.php.html#89"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFromArray::deliveryTypeSlugToId">deliveryTypeSlugToId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFromArray.php.html#103"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFromArray::deliveryStatusSlugToId">deliveryStatusSlugToId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFromArray.php.html#113"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFromArray::statusTypeSlugToId">statusTypeSlugToId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/Comment/ClientOrderCommentDtoFromRequest.php.html#19"><abbr title="App\Dto\Factory\Order\Client\Comment\ClientOrderCommentDtoFromRequest::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/Version/ClientOrderPositionDtoFromArray.php.html#7"><abbr title="App\Dto\Factory\Order\Client\Version\ClientOrderPositionDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Client/Version/ClientOrderPositionDtoFromPost.php.html#14"><abbr title="App\Dto\Factory\Order\Client\Version\ClientOrderPositionDtoFromPost::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Supplier/File/SupplierOrderFileDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Order\Supplier\File\SupplierOrderFileDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Supplier/SupplierOrderDtoFromArray.php.html#21"><abbr title="App\Dto\Factory\Order\Supplier\SupplierOrderDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Supplier/Version/SupplierOrderPositionDtoFromArray.php.html#12"><abbr title="App\Dto\Factory\Order\Supplier\Version\SupplierOrderPositionDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Order/Supplier/Version/SupplierOrderPositionDtoFromPost.php.html#17"><abbr title="App\Dto\Factory\Order\Supplier\Version\SupplierOrderPositionDtoFromPost::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Payment/ExpenditureRequest/ExpenditureRequestDtoFromArray.php.html#17"><abbr title="App\Dto\Factory\Payment\ExpenditureRequest\ExpenditureRequestDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Payment/ExpenditureRequest/ExpenditureRequestDtoFromEntityArray.php.html#20"><abbr title="App\Dto\Factory\Payment\ExpenditureRequest\ExpenditureRequestDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Payment/IncomingPaymentDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Payment\IncomingPaymentDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Payment/IncomingPaymentItemsDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Payment\IncomingPaymentItemsDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Payment/OutgoingPaymentDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Payment\OutgoingPaymentDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/Payment/OutgoingPaymentDtoItemsFromArray.php.html#16"><abbr title="App\Dto\Factory\Payment\OutgoingPaymentDtoItemsFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/User/KeycloakUserDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\User\KeycloakUserDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Contragent/ContragentBankDto.php.html#21"><abbr title="App\Dto\Lookup\Contragent\ContragentBankDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Contragent/ContragentDto.php.html#22"><abbr title="App\Dto\Lookup\Contragent\ContragentDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Currency/CurrencyDto.php.html#21"><abbr title="App\Dto\Lookup\Currency\CurrencyDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Currency/CurrencyRateDto.php.html#22"><abbr title="App\Dto\Lookup\Currency\CurrencyRateDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/JobPosition/JobPositionDto.php.html#19"><abbr title="App\Dto\Lookup\JobPosition\JobPositionDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Organization/OrganizationDto.php.html#21"><abbr title="App\Dto\Lookup\Organization\OrganizationDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Partner/PartnerDto.php.html#23"><abbr title="App\Dto\Lookup\Partner\PartnerDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Payment/CashFlowDto.php.html#20"><abbr title="App\Dto\Lookup\Payment\CashFlowDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Payment/PaymentTypeDto.php.html#20"><abbr title="App\Dto\Lookup\Payment\PaymentTypeDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lookup/Warehouse/WarehouseDto.php.html#20"><abbr title="App\Dto\Lookup\Warehouse\WarehouseDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/ClientOrderDto.php.html#58"><abbr title="App\Dto\Order\Client\ClientOrderDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Comment/ClientOrderCommentDto.php.html#19"><abbr title="App\Dto\Order\Client\Comment\ClientOrderCommentDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Client/Version/ClientOrderPositionDto.php.html#22"><abbr title="App\Dto\Order\Client\Version\ClientOrderPositionDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/File/SupplierOrderFileDto.php.html#19"><abbr title="App\Dto\Order\Supplier\File\SupplierOrderFileDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/SupplierOrderDto.php.html#44"><abbr title="App\Dto\Order\Supplier\SupplierOrderDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Order/Supplier/Version/SupplierOrderPositionDto.php.html#23"><abbr title="App\Dto\Order\Supplier\Version\SupplierOrderPositionDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/ExpenditureRequest/ExpenditureRequestDto.php.html#53"><abbr title="App\Dto\Payment\ExpenditureRequest\ExpenditureRequestDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/IncomingPaymentDto.php.html#24"><abbr title="App\Dto\Payment\IncomingPaymentDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/IncomingPaymentItemsDto.php.html#23"><abbr title="App\Dto\Payment\IncomingPaymentItemsDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/OutgoingPaymentDto.php.html#24"><abbr title="App\Dto\Payment\OutgoingPaymentDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Payment/OutgoingPaymentItemsDto.php.html#23"><abbr title="App\Dto\Payment\OutgoingPaymentItemsDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="User/KeycloakUserDto.php.html#24"><abbr title="App\Dto\User\KeycloakUserDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/ToArrayTrait.php.html#53"><abbr title="App\Dto\Traits\ToArrayTrait::setKeyList">setKeyList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Traits/ToArrayTrait.php.html#15"><abbr title="App\Dto\Traits\ToArrayTrait::toArray">toArray</abbr></a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="Factory/Product/Category/CategoryDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Product\Category\CategoryDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFrom1cArray.php.html#123"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFrom1cArray::statusTypeSlugToId">statusTypeSlugToId</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFromArray.php.html#113"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFromArray::statusTypeSlugToId">statusTypeSlugToId</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFrom1cArray.php.html#83"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFrom1cArray::paymentTypeSlugToId">paymentTypeSlugToId</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFromArray.php.html#73"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFromArray::paymentTypeSlugToId">paymentTypeSlugToId</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFrom1cArray.php.html#99"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFrom1cArray::deliveryTypeSlugToId">deliveryTypeSlugToId</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFrom1cArray.php.html#113"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFrom1cArray::deliveryStatusSlugToId">deliveryStatusSlugToId</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFromArray.php.html#89"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFromArray::deliveryTypeSlugToId">deliveryTypeSlugToId</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFromArray.php.html#103"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFromArray::deliveryStatusSlugToId">deliveryStatusSlugToId</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Factory/Payment/ExpenditureRequest/ExpenditureRequestDtoFromEntityArray.php.html#20"><abbr title="App\Dto\Factory\Payment\ExpenditureRequest\ExpenditureRequestDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Factory/Lookup/Partner/PartnerDtoFromEntityArray.php.html#15"><abbr title="App\Dto\Factory\Lookup\Partner\PartnerDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Factory/Department/DepartmentDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Department\DepartmentDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Department/DepartmentDtoFromEntityArray.php.html#16"><abbr title="App\Dto\Factory\Department\DepartmentDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Employee/EmployeeDtoFromEntityArray.php.html#19"><abbr title="App\Dto\Factory\Employee\EmployeeDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Lookup/Contragent/ContragentBankDtoFromEntityArray.php.html#18"><abbr title="App\Dto\Factory\Lookup\Contragent\ContragentBankDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Lookup/Payment/CashFlowDtoFromEntityItemArray.php.html#18"><abbr title="App\Dto\Factory\Lookup\Payment\CashFlowDtoFromEntityItemArray::__invoke">__invoke</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Lookup/Payment/PaymentTypeDtoFromEntityArray.php.html#18"><abbr title="App\Dto\Factory\Lookup\Payment\PaymentTypeDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Lookup/Warehouse/WarehouseDtoFromEntityArray.php.html#19"><abbr title="App\Dto\Factory\Lookup\Warehouse\WarehouseDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Factory/Employee/Salary/Rule/EmployeeSalaryRuleDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Employee\Salary\Rule\EmployeeSalaryRuleDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Lookup/Contragent/ContragentDtoFromEntityArray.php.html#16"><abbr title="App\Dto\Factory\Lookup\Contragent\ContragentDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Lookup/JobPosition/JobPositionDtoFromEntityArray.php.html#17"><abbr title="App\Dto\Factory\Lookup\JobPosition\JobPositionDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Lookup/Organization/OrganizationDtoFromEntityArray.php.html#16"><abbr title="App\Dto\Factory\Lookup\Organization\OrganizationDtoFromEntityArray::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Lookup/Partner/PartnerDtoFromArray.php.html#13"><abbr title="App\Dto\Factory\Lookup\Partner\PartnerDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Order/Client/ClientOrderDtoFrom1cArray.php.html#23"><abbr title="App\Dto\Factory\Order\Client\ClientOrderDtoFrom1cArray::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Payment/ExpenditureRequest/ExpenditureRequestDtoFromArray.php.html#17"><abbr title="App\Dto\Factory\Payment\ExpenditureRequest\ExpenditureRequestDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Factory/Product/Category/CategoryDtoFromArray.php.html#16"><abbr title="App\Dto\Factory\Product\Category\CategoryDtoFromArray::__invoke">__invoke</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Traits/ToArrayTrait.php.html#15"><abbr title="App\Dto\Traits\ToArrayTrait::toArray">toArray</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.12</a> using <a href="https://www.php.net/" target="_top">PHP 8.5.2</a> and <a href="https://phpunit.de/">PHPUnit 11.5.53</a> at Wed Feb 11 10:15:40 UTC 2026.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js?v=11.0.12" type="text/javascript"></script>
+  <script src="../_js/d3.min.js?v=11.0.12" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js?v=11.0.12" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([79,0,0,0,0,0,1,0,0,1,1,2], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([88,0,0,0,0,1,0,0,0,1,2,2], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Department\/DepartmentDto.php.html#10\">App\\Dto\\Department\\DepartmentDto<\/a>"],[0,1,"<a href=\"Employee\/EmployeeDto.php.html#11\">App\\Dto\\Employee\\EmployeeDto<\/a>"],[0,1,"<a href=\"Employee\/Salary\/EmployeeSalaryDto.php.html#11\">App\\Dto\\Employee\\Salary\\EmployeeSalaryDto<\/a>"],[0,1,"<a href=\"Employee\/Salary\/EmployeeSalaryRate\/EmployeeSalaryRateDto.php.html#11\">App\\Dto\\Employee\\Salary\\EmployeeSalaryRate\\EmployeeSalaryRateDto<\/a>"],[0,1,"<a href=\"Employee\/Salary\/JobPositionSalaryRate\/JobPositionSalaryRateDto.php.html#11\">App\\Dto\\Employee\\Salary\\JobPositionSalaryRate\\JobPositionSalaryRateDto<\/a>"],[0,1,"<a href=\"Employee\/Salary\/OneTimePayment\/OneTimePaymentDto.php.html#11\">App\\Dto\\Employee\\Salary\\OneTimePayment\\OneTimePaymentDto<\/a>"],[0,1,"<a href=\"Employee\/Salary\/Rule\/EmployeeSalaryRuleDto.php.html#11\">App\\Dto\\Employee\\Salary\\Rule\\EmployeeSalaryRuleDto<\/a>"],[0,1,"<a href=\"Employee\/Salary\/Rule\/Group\/EmployeeSalaryGroupRuleDto.php.html#10\">App\\Dto\\Employee\\Salary\\Rule\\Group\\EmployeeSalaryGroupRuleDto<\/a>"],[0,1,"<a href=\"Employee\/Salary\/SalaryProcessorDto.php.html#11\">App\\Dto\\Employee\\Salary\\SalaryProcessorDto<\/a>"],[0,1,"<a href=\"Employee\/Visit\/EmployeeVisitDto.php.html#11\">App\\Dto\\Employee\\Visit\\EmployeeVisitDto<\/a>"],[0,3,"<a href=\"Factory\/Department\/DepartmentDtoFromArray.php.html#10\">App\\Dto\\Factory\\Department\\DepartmentDtoFromArray<\/a>"],[0,3,"<a href=\"Factory\/Department\/DepartmentDtoFromEntityArray.php.html#10\">App\\Dto\\Factory\\Department\\DepartmentDtoFromEntityArray<\/a>"],[0,1,"<a href=\"Factory\/Employee\/EmployeeDtoArrayFactory.php.html#7\">App\\Dto\\Factory\\Employee\\EmployeeDtoArrayFactory<\/a>"],[0,1,"<a href=\"Factory\/Employee\/EmployeeDtoFromArray.php.html#11\">App\\Dto\\Factory\\Employee\\EmployeeDtoFromArray<\/a>"],[0,3,"<a href=\"Factory\/Employee\/EmployeeDtoFromEntityArray.php.html#10\">App\\Dto\\Factory\\Employee\\EmployeeDtoFromEntityArray<\/a>"],[0,1,"<a href=\"Factory\/Employee\/Salary\/EmployeeSalaryDtoFromArray.php.html#10\">App\\Dto\\Factory\\Employee\\Salary\\EmployeeSalaryDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Employee\/Salary\/EmployeeSalaryRate\/EmployeeSalaryRateDtoFromArray.php.html#10\">App\\Dto\\Factory\\Employee\\Salary\\EmployeeSalaryRate\\EmployeeSalaryRateDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Employee\/Salary\/JobPositionSalaryRate\/JobPositionSalaryRateDtoFromArray.php.html#11\">App\\Dto\\Factory\\Employee\\Salary\\JobPositionSalaryRate\\JobPositionSalaryRateDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Employee\/Salary\/OneTimePayment\/OneTimePaymentDtoFromArray.php.html#11\">App\\Dto\\Factory\\Employee\\Salary\\OneTimePayment\\OneTimePaymentDtoFromArray<\/a>"],[0,2,"<a href=\"Factory\/Employee\/Salary\/Rule\/EmployeeSalaryRuleDtoFromArray.php.html#10\">App\\Dto\\Factory\\Employee\\Salary\\Rule\\EmployeeSalaryRuleDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Employee\/Salary\/Rule\/Group\/EmployeeSalaryGroupRuleDtoFromArray.php.html#10\">App\\Dto\\Factory\\Employee\\Salary\\Rule\\Group\\EmployeeSalaryGroupRuleDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Employee\/Visit\/EmployeeVisitDtoArrayFromArray.php.html#10\">App\\Dto\\Factory\\Employee\\Visit\\EmployeeVisitDtoArrayFromArray<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Contragent\/ContragentBankDtoFromArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Contragent\\ContragentBankDtoFromArray<\/a>"],[0,3,"<a href=\"Factory\/Lookup\/Contragent\/ContragentBankDtoFromEntityArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Contragent\\ContragentBankDtoFromEntityArray<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Contragent\/ContragentDtoFromArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Contragent\\ContragentDtoFromArray<\/a>"],[0,2,"<a href=\"Factory\/Lookup\/Contragent\/ContragentDtoFromEntityArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Contragent\\ContragentDtoFromEntityArray<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Currency\/CurrencyDtoFromArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Currency\\CurrencyDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Currency\/CurrencyRateDtoFromArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Currency\\CurrencyRateDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/JobPosition\/JobPositionDtoArrayFactory.php.html#7\">App\\Dto\\Factory\\Lookup\\JobPosition\\JobPositionDtoArrayFactory<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/JobPosition\/JobPositionDtoFromArray.php.html#11\">App\\Dto\\Factory\\Lookup\\JobPosition\\JobPositionDtoFromArray<\/a>"],[0,2,"<a href=\"Factory\/Lookup\/JobPosition\/JobPositionDtoFromEntityArray.php.html#11\">App\\Dto\\Factory\\Lookup\\JobPosition\\JobPositionDtoFromEntityArray<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Organization\/OrganizationDtoFromArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Organization\\OrganizationDtoFromArray<\/a>"],[0,2,"<a href=\"Factory\/Lookup\/Organization\/OrganizationDtoFromEntityArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Organization\\OrganizationDtoFromEntityArray<\/a>"],[0,2,"<a href=\"Factory\/Lookup\/Partner\/PartnerDtoFromArray.php.html#11\">App\\Dto\\Factory\\Lookup\\Partner\\PartnerDtoFromArray<\/a>"],[0,4,"<a href=\"Factory\/Lookup\/Partner\/PartnerDtoFromEntityArray.php.html#11\">App\\Dto\\Factory\\Lookup\\Partner\\PartnerDtoFromEntityArray<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Payment\/CashFlowDtoFromArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Payment\\CashFlowDtoFromArray<\/a>"],[0,3,"<a href=\"Factory\/Lookup\/Payment\/CashFlowDtoFromEntityItemArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Payment\\CashFlowDtoFromEntityItemArray<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Payment\/PaymentTypeDtoFromArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Payment\\PaymentTypeDtoFromArray<\/a>"],[0,3,"<a href=\"Factory\/Lookup\/Payment\/PaymentTypeDtoFromEntityArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Payment\\PaymentTypeDtoFromEntityArray<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Warehouse\/WarehouseDtoFromArray.php.html#10\">App\\Dto\\Factory\\Lookup\\Warehouse\\WarehouseDtoFromArray<\/a>"],[0,3,"<a href=\"Factory\/Lookup\/Warehouse\/WarehouseDtoFromEntityArray.php.html#11\">App\\Dto\\Factory\\Lookup\\Warehouse\\WarehouseDtoFromEntityArray<\/a>"],[0,28,"<a href=\"Factory\/Order\/Client\/ClientOrderDtoFrom1cArray.php.html#15\">App\\Dto\\Factory\\Order\\Client\\ClientOrderDtoFrom1cArray<\/a>"],[0,27,"<a href=\"Factory\/Order\/Client\/ClientOrderDtoFromArray.php.html#14\">App\\Dto\\Factory\\Order\\Client\\ClientOrderDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Order\/Client\/Comment\/ClientOrderCommentDtoFromRequest.php.html#11\">App\\Dto\\Factory\\Order\\Client\\Comment\\ClientOrderCommentDtoFromRequest<\/a>"],[0,1,"<a href=\"Factory\/Order\/Client\/Version\/ClientOrderPositionDtoFromArray.php.html#5\">App\\Dto\\Factory\\Order\\Client\\Version\\ClientOrderPositionDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Order\/Client\/Version\/ClientOrderPositionDtoFromPost.php.html#7\">App\\Dto\\Factory\\Order\\Client\\Version\\ClientOrderPositionDtoFromPost<\/a>"],[0,1,"<a href=\"Factory\/Order\/Supplier\/File\/SupplierOrderFileDtoFromArray.php.html#10\">App\\Dto\\Factory\\Order\\Supplier\\File\\SupplierOrderFileDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Order\/Supplier\/SupplierOrderDtoFromArray.php.html#13\">App\\Dto\\Factory\\Order\\Supplier\\SupplierOrderDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Order\/Supplier\/Version\/SupplierOrderPositionDtoFromArray.php.html#10\">App\\Dto\\Factory\\Order\\Supplier\\Version\\SupplierOrderPositionDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Order\/Supplier\/Version\/SupplierOrderPositionDtoFromPost.php.html#10\">App\\Dto\\Factory\\Order\\Supplier\\Version\\SupplierOrderPositionDtoFromPost<\/a>"],[0,2,"<a href=\"Factory\/Payment\/ExpenditureRequest\/ExpenditureRequestDtoFromArray.php.html#11\">App\\Dto\\Factory\\Payment\\ExpenditureRequest\\ExpenditureRequestDtoFromArray<\/a>"],[0,5,"<a href=\"Factory\/Payment\/ExpenditureRequest\/ExpenditureRequestDtoFromEntityArray.php.html#14\">App\\Dto\\Factory\\Payment\\ExpenditureRequest\\ExpenditureRequestDtoFromEntityArray<\/a>"],[0,1,"<a href=\"Factory\/Payment\/IncomingPaymentDtoFromArray.php.html#10\">App\\Dto\\Factory\\Payment\\IncomingPaymentDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Payment\/IncomingPaymentItemsDtoFromArray.php.html#10\">App\\Dto\\Factory\\Payment\\IncomingPaymentItemsDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Payment\/OutgoingPaymentDtoFromArray.php.html#10\">App\\Dto\\Factory\\Payment\\OutgoingPaymentDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/Payment\/OutgoingPaymentDtoItemsFromArray.php.html#10\">App\\Dto\\Factory\\Payment\\OutgoingPaymentDtoItemsFromArray<\/a>"],[85.71428571428571,3,"<a href=\"Factory\/Product\/Category\/CategoryDtoFromArray.php.html#10\">App\\Dto\\Factory\\Product\\Category\\CategoryDtoFromArray<\/a>"],[90.9090909090909,3,"<a href=\"Factory\/Product\/ProductDtoFromArray.php.html#10\">App\\Dto\\Factory\\Product\\ProductDtoFromArray<\/a>"],[0,1,"<a href=\"Factory\/User\/KeycloakUserDtoFromArray.php.html#10\">App\\Dto\\Factory\\User\\KeycloakUserDtoFromArray<\/a>"],[0,1,"<a href=\"Lookup\/Contragent\/ContragentBankDto.php.html#11\">App\\Dto\\Lookup\\Contragent\\ContragentBankDto<\/a>"],[0,1,"<a href=\"Lookup\/Contragent\/ContragentDto.php.html#11\">App\\Dto\\Lookup\\Contragent\\ContragentDto<\/a>"],[0,1,"<a href=\"Lookup\/Currency\/CurrencyDto.php.html#11\">App\\Dto\\Lookup\\Currency\\CurrencyDto<\/a>"],[0,1,"<a href=\"Lookup\/Currency\/CurrencyRateDto.php.html#11\">App\\Dto\\Lookup\\Currency\\CurrencyRateDto<\/a>"],[0,1,"<a href=\"Lookup\/JobPosition\/JobPositionDto.php.html#10\">App\\Dto\\Lookup\\JobPosition\\JobPositionDto<\/a>"],[0,1,"<a href=\"Lookup\/Organization\/OrganizationDto.php.html#11\">App\\Dto\\Lookup\\Organization\\OrganizationDto<\/a>"],[0,1,"<a href=\"Lookup\/Partner\/PartnerDto.php.html#11\">App\\Dto\\Lookup\\Partner\\PartnerDto<\/a>"],[0,1,"<a href=\"Lookup\/Payment\/CashFlowDto.php.html#11\">App\\Dto\\Lookup\\Payment\\CashFlowDto<\/a>"],[0,1,"<a href=\"Lookup\/Payment\/PaymentTypeDto.php.html#11\">App\\Dto\\Lookup\\Payment\\PaymentTypeDto<\/a>"],[0,1,"<a href=\"Lookup\/Warehouse\/WarehouseDto.php.html#11\">App\\Dto\\Lookup\\Warehouse\\WarehouseDto<\/a>"],[0,1,"<a href=\"Order\/Client\/ClientOrderDto.php.html#11\">App\\Dto\\Order\\Client\\ClientOrderDto<\/a>"],[0,1,"<a href=\"Order\/Client\/Comment\/ClientOrderCommentDto.php.html#10\">App\\Dto\\Order\\Client\\Comment\\ClientOrderCommentDto<\/a>"],[0,1,"<a href=\"Order\/Client\/Version\/ClientOrderPositionDto.php.html#7\">App\\Dto\\Order\\Client\\Version\\ClientOrderPositionDto<\/a>"],[0,1,"<a href=\"Order\/Supplier\/File\/SupplierOrderFileDto.php.html#11\">App\\Dto\\Order\\Supplier\\File\\SupplierOrderFileDto<\/a>"],[0,1,"<a href=\"Order\/Supplier\/SupplierOrderDto.php.html#11\">App\\Dto\\Order\\Supplier\\SupplierOrderDto<\/a>"],[0,1,"<a href=\"Order\/Supplier\/Version\/SupplierOrderPositionDto.php.html#10\">App\\Dto\\Order\\Supplier\\Version\\SupplierOrderPositionDto<\/a>"],[0,1,"<a href=\"Payment\/ExpenditureRequest\/ExpenditureRequestDto.php.html#12\">App\\Dto\\Payment\\ExpenditureRequest\\ExpenditureRequestDto<\/a>"],[0,1,"<a href=\"Payment\/IncomingPaymentDto.php.html#15\">App\\Dto\\Payment\\IncomingPaymentDto<\/a>"],[0,1,"<a href=\"Payment\/IncomingPaymentItemsDto.php.html#12\">App\\Dto\\Payment\\IncomingPaymentItemsDto<\/a>"],[0,1,"<a href=\"Payment\/OutgoingPaymentDto.php.html#15\">App\\Dto\\Payment\\OutgoingPaymentDto<\/a>"],[0,1,"<a href=\"Payment\/OutgoingPaymentItemsDto.php.html#12\">App\\Dto\\Payment\\OutgoingPaymentItemsDto<\/a>"],[100,1,"<a href=\"Product\/CategoryDto.php.html#10\">App\\Dto\\Product\\CategoryDto<\/a>"],[100,1,"<a href=\"Product\/ProductDto.php.html#10\">App\\Dto\\Product\\ProductDto<\/a>"],[0,1,"<a href=\"User\/KeycloakUserDto.php.html#11\">App\\Dto\\User\\KeycloakUserDto<\/a>"],[54.54545454545454,7,"<a href=\"Traits\/ToArrayTrait.php.html#5\">App\\Dto\\Traits\\ToArrayTrait<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Department\/DepartmentDto.php.html#18\">App\\Dto\\Department\\DepartmentDto::__construct<\/a>"],[0,1,"<a href=\"Employee\/EmployeeDto.php.html#25\">App\\Dto\\Employee\\EmployeeDto::__construct<\/a>"],[0,1,"<a href=\"Employee\/Salary\/EmployeeSalaryDto.php.html#30\">App\\Dto\\Employee\\Salary\\EmployeeSalaryDto::__construct<\/a>"],[0,1,"<a href=\"Employee\/Salary\/EmployeeSalaryRate\/EmployeeSalaryRateDto.php.html#23\">App\\Dto\\Employee\\Salary\\EmployeeSalaryRate\\EmployeeSalaryRateDto::__construct<\/a>"],[0,1,"<a href=\"Employee\/Salary\/JobPositionSalaryRate\/JobPositionSalaryRateDto.php.html#23\">App\\Dto\\Employee\\Salary\\JobPositionSalaryRate\\JobPositionSalaryRateDto::__construct<\/a>"],[0,1,"<a href=\"Employee\/Salary\/OneTimePayment\/OneTimePaymentDto.php.html#22\">App\\Dto\\Employee\\Salary\\OneTimePayment\\OneTimePaymentDto::__construct<\/a>"],[0,1,"<a href=\"Employee\/Salary\/Rule\/EmployeeSalaryRuleDto.php.html#27\">App\\Dto\\Employee\\Salary\\Rule\\EmployeeSalaryRuleDto::__construct<\/a>"],[0,1,"<a href=\"Employee\/Salary\/Rule\/Group\/EmployeeSalaryGroupRuleDto.php.html#21\">App\\Dto\\Employee\\Salary\\Rule\\Group\\EmployeeSalaryGroupRuleDto::__construct<\/a>"],[0,1,"<a href=\"Employee\/Salary\/SalaryProcessorDto.php.html#21\">App\\Dto\\Employee\\Salary\\SalaryProcessorDto::__construct<\/a>"],[0,1,"<a href=\"Employee\/Visit\/EmployeeVisitDto.php.html#20\">App\\Dto\\Employee\\Visit\\EmployeeVisitDto::__construct<\/a>"],[0,3,"<a href=\"Factory\/Department\/DepartmentDtoFromArray.php.html#16\">App\\Dto\\Factory\\Department\\DepartmentDtoFromArray::__invoke<\/a>"],[0,3,"<a href=\"Factory\/Department\/DepartmentDtoFromEntityArray.php.html#16\">App\\Dto\\Factory\\Department\\DepartmentDtoFromEntityArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Employee\/EmployeeDtoArrayFactory.php.html#15\">App\\Dto\\Factory\\Employee\\EmployeeDtoArrayFactory::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Employee\/EmployeeDtoFromArray.php.html#20\">App\\Dto\\Factory\\Employee\\EmployeeDtoFromArray::__invoke<\/a>"],[0,3,"<a href=\"Factory\/Employee\/EmployeeDtoFromEntityArray.php.html#19\">App\\Dto\\Factory\\Employee\\EmployeeDtoFromEntityArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Employee\/Salary\/EmployeeSalaryDtoFromArray.php.html#19\">App\\Dto\\Factory\\Employee\\Salary\\EmployeeSalaryDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Employee\/Salary\/EmployeeSalaryRate\/EmployeeSalaryRateDtoFromArray.php.html#19\">App\\Dto\\Factory\\Employee\\Salary\\EmployeeSalaryRate\\EmployeeSalaryRateDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Employee\/Salary\/JobPositionSalaryRate\/JobPositionSalaryRateDtoFromArray.php.html#20\">App\\Dto\\Factory\\Employee\\Salary\\JobPositionSalaryRate\\JobPositionSalaryRateDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Employee\/Salary\/OneTimePayment\/OneTimePaymentDtoFromArray.php.html#20\">App\\Dto\\Factory\\Employee\\Salary\\OneTimePayment\\OneTimePaymentDtoFromArray::__invoke<\/a>"],[0,2,"<a href=\"Factory\/Employee\/Salary\/Rule\/EmployeeSalaryRuleDtoFromArray.php.html#16\">App\\Dto\\Factory\\Employee\\Salary\\Rule\\EmployeeSalaryRuleDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Employee\/Salary\/Rule\/Group\/EmployeeSalaryGroupRuleDtoFromArray.php.html#16\">App\\Dto\\Factory\\Employee\\Salary\\Rule\\Group\\EmployeeSalaryGroupRuleDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Employee\/Visit\/EmployeeVisitDtoArrayFromArray.php.html#19\">App\\Dto\\Factory\\Employee\\Visit\\EmployeeVisitDtoArrayFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Contragent\/ContragentBankDtoFromArray.php.html#16\">App\\Dto\\Factory\\Lookup\\Contragent\\ContragentBankDtoFromArray::__invoke<\/a>"],[0,3,"<a href=\"Factory\/Lookup\/Contragent\/ContragentBankDtoFromEntityArray.php.html#18\">App\\Dto\\Factory\\Lookup\\Contragent\\ContragentBankDtoFromEntityArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Contragent\/ContragentDtoFromArray.php.html#16\">App\\Dto\\Factory\\Lookup\\Contragent\\ContragentDtoFromArray::__invoke<\/a>"],[0,2,"<a href=\"Factory\/Lookup\/Contragent\/ContragentDtoFromEntityArray.php.html#16\">App\\Dto\\Factory\\Lookup\\Contragent\\ContragentDtoFromEntityArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Currency\/CurrencyDtoFromArray.php.html#16\">App\\Dto\\Factory\\Lookup\\Currency\\CurrencyDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Currency\/CurrencyRateDtoFromArray.php.html#16\">App\\Dto\\Factory\\Lookup\\Currency\\CurrencyRateDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/JobPosition\/JobPositionDtoArrayFactory.php.html#15\">App\\Dto\\Factory\\Lookup\\JobPosition\\JobPositionDtoArrayFactory::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/JobPosition\/JobPositionDtoFromArray.php.html#19\">App\\Dto\\Factory\\Lookup\\JobPosition\\JobPositionDtoFromArray::__invoke<\/a>"],[0,2,"<a href=\"Factory\/Lookup\/JobPosition\/JobPositionDtoFromEntityArray.php.html#17\">App\\Dto\\Factory\\Lookup\\JobPosition\\JobPositionDtoFromEntityArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Organization\/OrganizationDtoFromArray.php.html#12\">App\\Dto\\Factory\\Lookup\\Organization\\OrganizationDtoFromArray::__invoke<\/a>"],[0,2,"<a href=\"Factory\/Lookup\/Organization\/OrganizationDtoFromEntityArray.php.html#16\">App\\Dto\\Factory\\Lookup\\Organization\\OrganizationDtoFromEntityArray::__invoke<\/a>"],[0,2,"<a href=\"Factory\/Lookup\/Partner\/PartnerDtoFromArray.php.html#13\">App\\Dto\\Factory\\Lookup\\Partner\\PartnerDtoFromArray::__invoke<\/a>"],[0,4,"<a href=\"Factory\/Lookup\/Partner\/PartnerDtoFromEntityArray.php.html#15\">App\\Dto\\Factory\\Lookup\\Partner\\PartnerDtoFromEntityArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Payment\/CashFlowDtoFromArray.php.html#16\">App\\Dto\\Factory\\Lookup\\Payment\\CashFlowDtoFromArray::__invoke<\/a>"],[0,3,"<a href=\"Factory\/Lookup\/Payment\/CashFlowDtoFromEntityItemArray.php.html#18\">App\\Dto\\Factory\\Lookup\\Payment\\CashFlowDtoFromEntityItemArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Payment\/PaymentTypeDtoFromArray.php.html#16\">App\\Dto\\Factory\\Lookup\\Payment\\PaymentTypeDtoFromArray::__invoke<\/a>"],[0,3,"<a href=\"Factory\/Lookup\/Payment\/PaymentTypeDtoFromEntityArray.php.html#18\">App\\Dto\\Factory\\Lookup\\Payment\\PaymentTypeDtoFromEntityArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Lookup\/Warehouse\/WarehouseDtoFromArray.php.html#16\">App\\Dto\\Factory\\Lookup\\Warehouse\\WarehouseDtoFromArray::__invoke<\/a>"],[0,3,"<a href=\"Factory\/Lookup\/Warehouse\/WarehouseDtoFromEntityArray.php.html#19\">App\\Dto\\Factory\\Lookup\\Warehouse\\WarehouseDtoFromEntityArray::__invoke<\/a>"],[0,2,"<a href=\"Factory\/Order\/Client\/ClientOrderDtoFrom1cArray.php.html#23\">App\\Dto\\Factory\\Order\\Client\\ClientOrderDtoFrom1cArray::__invoke<\/a>"],[0,7,"<a href=\"Factory\/Order\/Client\/ClientOrderDtoFrom1cArray.php.html#83\">App\\Dto\\Factory\\Order\\Client\\ClientOrderDtoFrom1cArray::paymentTypeSlugToId<\/a>"],[0,5,"<a href=\"Factory\/Order\/Client\/ClientOrderDtoFrom1cArray.php.html#99\">App\\Dto\\Factory\\Order\\Client\\ClientOrderDtoFrom1cArray::deliveryTypeSlugToId<\/a>"],[0,5,"<a href=\"Factory\/Order\/Client\/ClientOrderDtoFrom1cArray.php.html#113\">App\\Dto\\Factory\\Order\\Client\\ClientOrderDtoFrom1cArray::deliveryStatusSlugToId<\/a>"],[0,9,"<a href=\"Factory\/Order\/Client\/ClientOrderDtoFrom1cArray.php.html#123\">App\\Dto\\Factory\\Order\\Client\\ClientOrderDtoFrom1cArray::statusTypeSlugToId<\/a>"],[0,1,"<a href=\"Factory\/Order\/Client\/ClientOrderDtoFromArray.php.html#22\">App\\Dto\\Factory\\Order\\Client\\ClientOrderDtoFromArray::__invoke<\/a>"],[0,7,"<a href=\"Factory\/Order\/Client\/ClientOrderDtoFromArray.php.html#73\">App\\Dto\\Factory\\Order\\Client\\ClientOrderDtoFromArray::paymentTypeSlugToId<\/a>"],[0,5,"<a href=\"Factory\/Order\/Client\/ClientOrderDtoFromArray.php.html#89\">App\\Dto\\Factory\\Order\\Client\\ClientOrderDtoFromArray::deliveryTypeSlugToId<\/a>"],[0,5,"<a href=\"Factory\/Order\/Client\/ClientOrderDtoFromArray.php.html#103\">App\\Dto\\Factory\\Order\\Client\\ClientOrderDtoFromArray::deliveryStatusSlugToId<\/a>"],[0,9,"<a href=\"Factory\/Order\/Client\/ClientOrderDtoFromArray.php.html#113\">App\\Dto\\Factory\\Order\\Client\\ClientOrderDtoFromArray::statusTypeSlugToId<\/a>"],[0,1,"<a href=\"Factory\/Order\/Client\/Comment\/ClientOrderCommentDtoFromRequest.php.html#19\">App\\Dto\\Factory\\Order\\Client\\Comment\\ClientOrderCommentDtoFromRequest::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Order\/Client\/Version\/ClientOrderPositionDtoFromArray.php.html#7\">App\\Dto\\Factory\\Order\\Client\\Version\\ClientOrderPositionDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Order\/Client\/Version\/ClientOrderPositionDtoFromPost.php.html#14\">App\\Dto\\Factory\\Order\\Client\\Version\\ClientOrderPositionDtoFromPost::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Order\/Supplier\/File\/SupplierOrderFileDtoFromArray.php.html#16\">App\\Dto\\Factory\\Order\\Supplier\\File\\SupplierOrderFileDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Order\/Supplier\/SupplierOrderDtoFromArray.php.html#21\">App\\Dto\\Factory\\Order\\Supplier\\SupplierOrderDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Order\/Supplier\/Version\/SupplierOrderPositionDtoFromArray.php.html#12\">App\\Dto\\Factory\\Order\\Supplier\\Version\\SupplierOrderPositionDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Order\/Supplier\/Version\/SupplierOrderPositionDtoFromPost.php.html#17\">App\\Dto\\Factory\\Order\\Supplier\\Version\\SupplierOrderPositionDtoFromPost::__invoke<\/a>"],[0,2,"<a href=\"Factory\/Payment\/ExpenditureRequest\/ExpenditureRequestDtoFromArray.php.html#17\">App\\Dto\\Factory\\Payment\\ExpenditureRequest\\ExpenditureRequestDtoFromArray::__invoke<\/a>"],[0,5,"<a href=\"Factory\/Payment\/ExpenditureRequest\/ExpenditureRequestDtoFromEntityArray.php.html#20\">App\\Dto\\Factory\\Payment\\ExpenditureRequest\\ExpenditureRequestDtoFromEntityArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Payment\/IncomingPaymentDtoFromArray.php.html#16\">App\\Dto\\Factory\\Payment\\IncomingPaymentDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Payment\/IncomingPaymentItemsDtoFromArray.php.html#16\">App\\Dto\\Factory\\Payment\\IncomingPaymentItemsDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Payment\/OutgoingPaymentDtoFromArray.php.html#16\">App\\Dto\\Factory\\Payment\\OutgoingPaymentDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/Payment\/OutgoingPaymentDtoItemsFromArray.php.html#16\">App\\Dto\\Factory\\Payment\\OutgoingPaymentDtoItemsFromArray::__invoke<\/a>"],[85.71428571428571,3,"<a href=\"Factory\/Product\/Category\/CategoryDtoFromArray.php.html#16\">App\\Dto\\Factory\\Product\\Category\\CategoryDtoFromArray::__invoke<\/a>"],[90.9090909090909,3,"<a href=\"Factory\/Product\/ProductDtoFromArray.php.html#16\">App\\Dto\\Factory\\Product\\ProductDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Factory\/User\/KeycloakUserDtoFromArray.php.html#16\">App\\Dto\\Factory\\User\\KeycloakUserDtoFromArray::__invoke<\/a>"],[0,1,"<a href=\"Lookup\/Contragent\/ContragentBankDto.php.html#21\">App\\Dto\\Lookup\\Contragent\\ContragentBankDto::__construct<\/a>"],[0,1,"<a href=\"Lookup\/Contragent\/ContragentDto.php.html#22\">App\\Dto\\Lookup\\Contragent\\ContragentDto::__construct<\/a>"],[0,1,"<a href=\"Lookup\/Currency\/CurrencyDto.php.html#21\">App\\Dto\\Lookup\\Currency\\CurrencyDto::__construct<\/a>"],[0,1,"<a href=\"Lookup\/Currency\/CurrencyRateDto.php.html#22\">App\\Dto\\Lookup\\Currency\\CurrencyRateDto::__construct<\/a>"],[0,1,"<a href=\"Lookup\/JobPosition\/JobPositionDto.php.html#19\">App\\Dto\\Lookup\\JobPosition\\JobPositionDto::__construct<\/a>"],[0,1,"<a href=\"Lookup\/Organization\/OrganizationDto.php.html#21\">App\\Dto\\Lookup\\Organization\\OrganizationDto::__construct<\/a>"],[0,1,"<a href=\"Lookup\/Partner\/PartnerDto.php.html#23\">App\\Dto\\Lookup\\Partner\\PartnerDto::__construct<\/a>"],[0,1,"<a href=\"Lookup\/Payment\/CashFlowDto.php.html#20\">App\\Dto\\Lookup\\Payment\\CashFlowDto::__construct<\/a>"],[0,1,"<a href=\"Lookup\/Payment\/PaymentTypeDto.php.html#20\">App\\Dto\\Lookup\\Payment\\PaymentTypeDto::__construct<\/a>"],[0,1,"<a href=\"Lookup\/Warehouse\/WarehouseDto.php.html#20\">App\\Dto\\Lookup\\Warehouse\\WarehouseDto::__construct<\/a>"],[0,1,"<a href=\"Order\/Client\/ClientOrderDto.php.html#58\">App\\Dto\\Order\\Client\\ClientOrderDto::__construct<\/a>"],[0,1,"<a href=\"Order\/Client\/Comment\/ClientOrderCommentDto.php.html#19\">App\\Dto\\Order\\Client\\Comment\\ClientOrderCommentDto::__construct<\/a>"],[0,1,"<a href=\"Order\/Client\/Version\/ClientOrderPositionDto.php.html#22\">App\\Dto\\Order\\Client\\Version\\ClientOrderPositionDto::__construct<\/a>"],[0,1,"<a href=\"Order\/Supplier\/File\/SupplierOrderFileDto.php.html#19\">App\\Dto\\Order\\Supplier\\File\\SupplierOrderFileDto::__construct<\/a>"],[0,1,"<a href=\"Order\/Supplier\/SupplierOrderDto.php.html#44\">App\\Dto\\Order\\Supplier\\SupplierOrderDto::__construct<\/a>"],[0,1,"<a href=\"Order\/Supplier\/Version\/SupplierOrderPositionDto.php.html#23\">App\\Dto\\Order\\Supplier\\Version\\SupplierOrderPositionDto::__construct<\/a>"],[0,1,"<a href=\"Payment\/ExpenditureRequest\/ExpenditureRequestDto.php.html#53\">App\\Dto\\Payment\\ExpenditureRequest\\ExpenditureRequestDto::__construct<\/a>"],[0,1,"<a href=\"Payment\/IncomingPaymentDto.php.html#24\">App\\Dto\\Payment\\IncomingPaymentDto::__construct<\/a>"],[0,1,"<a href=\"Payment\/IncomingPaymentItemsDto.php.html#23\">App\\Dto\\Payment\\IncomingPaymentItemsDto::__construct<\/a>"],[0,1,"<a href=\"Payment\/OutgoingPaymentDto.php.html#24\">App\\Dto\\Payment\\OutgoingPaymentDto::__construct<\/a>"],[0,1,"<a href=\"Payment\/OutgoingPaymentItemsDto.php.html#23\">App\\Dto\\Payment\\OutgoingPaymentItemsDto::__construct<\/a>"],[100,1,"<a href=\"Product\/CategoryDto.php.html#18\">App\\Dto\\Product\\CategoryDto::__construct<\/a>"],[100,1,"<a href=\"Product\/ProductDto.php.html#22\">App\\Dto\\Product\\ProductDto::__construct<\/a>"],[0,1,"<a href=\"User\/KeycloakUserDto.php.html#24\">App\\Dto\\User\\KeycloakUserDto::__construct<\/a>"],[42.857142857142854,2,"<a href=\"Traits\/ToArrayTrait.php.html#15\">App\\Dto\\Traits\\ToArrayTrait::toArray<\/a>"],[90,4,"<a href=\"Traits\/ToArrayTrait.php.html#32\">App\\Dto\\Traits\\ToArrayTrait::getDtoPropertyList<\/a>"],[0,1,"<a href=\"Traits\/ToArrayTrait.php.html#53\">App\\Dto\\Traits\\ToArrayTrait::setKeyList<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

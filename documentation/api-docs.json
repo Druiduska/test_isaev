@@ -1,0 +1,1049 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API",
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/product/categories": {
+            "get": {
+                "tags": [
+                    "Категории"
+                ],
+                "summary": "Получить список категорий",
+                "operationId": "c854477a8f204dd0b05b8b15c4398eb8",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/IndexRequest:page"
+                    },
+                    {
+                        "$ref": "#/components/parameters/IndexRequest:per_page"
+                    },
+                    {
+                        "$ref": "#/components/parameters/IndexRequest:q"
+                    },
+                    {
+                        "$ref": "#/components/parameters/IndexRequest:sort_field"
+                    },
+                    {
+                        "$ref": "#/components/parameters/IndexRequest:sort_direction"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Успешный ответ",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "result": {
+                                            "type": "string",
+                                            "example": "LIST"
+                                        },
+                                        "request_uuid": {
+                                            "type": "string",
+                                            "example": "d6a840e4-4b42-4f87-bf1c-2d88a7f8a212"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/CategoryResource"
+                                            }
+                                        },
+                                        "pagination": {
+                                            "properties": {
+                                                "total": {
+                                                    "type": "integer",
+                                                    "example": 50
+                                                },
+                                                "count": {
+                                                    "type": "integer",
+                                                    "example": 10
+                                                },
+                                                "per_page": {
+                                                    "type": "integer",
+                                                    "example": 10
+                                                },
+                                                "current_page": {
+                                                    "type": "integer",
+                                                    "example": 1
+                                                },
+                                                "total_pages": {
+                                                    "type": "integer",
+                                                    "example": 5
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/product/category": {
+            "post": {
+                "tags": [
+                    "Категории"
+                ],
+                "summary": "Создать новую категорию",
+                "operationId": "075ffa86168f3af5ceb79e170b29aadf",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "allOf": [
+                                    {
+                                        "$ref": "#/components/schemas/SaveCategoryRequest"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Успешный ответ",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseSuccessResource"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UnauthorizedErrorResource"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ForbiddenErrorResource"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ValidationErrorResource"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/InternalServerErrorResource"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/api/product": {
+            "get": {
+                "tags": [
+                    "Товары"
+                ],
+                "summary": "Получить список товаров",
+                "operationId": "089688940b4947f7bf2bbc783059a8c0",
+                "parameters": [
+                    {
+                        "$ref": "#/components/parameters/IndexRequest:page"
+                    },
+                    {
+                        "$ref": "#/components/parameters/IndexRequest:per_page"
+                    },
+                    {
+                        "$ref": "#/components/parameters/IndexRequest:q"
+                    },
+                    {
+                        "$ref": "#/components/parameters/IndexRequest:sort_field"
+                    },
+                    {
+                        "$ref": "#/components/parameters/IndexRequest:sort_direction"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Успешный ответ",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "result": {
+                                            "type": "string",
+                                            "example": "LIST"
+                                        },
+                                        "request_uuid": {
+                                            "type": "string",
+                                            "example": "d6a840e4-4b42-4f87-bf1c-2d88a7f8a212"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/ProductResource"
+                                            }
+                                        },
+                                        "pagination": {
+                                            "properties": {
+                                                "total": {
+                                                    "type": "integer",
+                                                    "example": 50
+                                                },
+                                                "count": {
+                                                    "type": "integer",
+                                                    "example": 10
+                                                },
+                                                "per_page": {
+                                                    "type": "integer",
+                                                    "example": 10
+                                                },
+                                                "current_page": {
+                                                    "type": "integer",
+                                                    "example": 1
+                                                },
+                                                "total_pages": {
+                                                    "type": "integer",
+                                                    "example": 5
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "Товары"
+                ],
+                "summary": "Создать новый товар",
+                "operationId": "179fe3814838df8117123de19cd76c73",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "allOf": [
+                                    {
+                                        "$ref": "#/components/schemas/SaveProductRequest"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Успешный ответ",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseSuccessResource"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UnauthorizedErrorResource"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ForbiddenErrorResource"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Unprocessable Entity",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ValidationErrorResource"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/InternalServerErrorResource"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "SaveCategoryRequest": {
+                "required": [
+                    "name"
+                ],
+                "properties": {
+                    "name": {
+                        "description": "Наименование категории товаров",
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "example": {
+                    "name": "Шкуры продажные"
+                }
+            },
+            "SaveProductRequest": {
+                "required": [
+                    "name"
+                ],
+                "properties": {
+                    "name": {
+                        "description": "Наименование категории товаров",
+                        "type": "string"
+                    },
+                    "price": {
+                        "description": "Цена",
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "categories_id": {
+                        "description": "id Категории",
+                        "type": "string"
+                    },
+                    "in_stock": {
+                        "description": "В наличии",
+                        "type": "string"
+                    },
+                    "rating": {
+                        "description": "Рейтинг",
+                        "type": "string"
+                    }
+                },
+                "type": "object",
+                "example": {
+                    "name": "Шкура мышки",
+                    "price": 0.4,
+                    "categories_id": 837,
+                    "in_stock": true,
+                    "rating": 4.2
+                }
+            },
+            "AbstractResponseResource": {
+                "properties": {
+                    "result": {
+                        "description": "Slug Ответа",
+                        "type": "string",
+                        "example": "SOMETHING ERROR"
+                    },
+                    "request_uuid": {
+                        "description": "Идентификатор запроса",
+                        "type": "string",
+                        "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                    },
+                    "data": {
+                        "description": "Данные",
+                        "type": "array",
+                        "items": {}
+                    }
+                },
+                "type": "object"
+            },
+            "AbstractErrorResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractResponseResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Slug ошибки",
+                                "type": "string",
+                                "example": "SOMETHING_ERROR"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "errors": {
+                                "description": "Описание ошибок",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "ForbiddenErrorResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractErrorResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Slug ошибки",
+                                "type": "string",
+                                "example": "FORBIDDEN"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "errors": {
+                                "description": "Описание ошибок",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "InternalServerErrorResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractErrorResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Internal Server Error",
+                                "type": "string",
+                                "example": "INTERNAL_SERVER_ERROR"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "errors": {
+                                "type": "array",
+                                "items": {
+                                    "properties": {
+                                        "message": {
+                                            "description": "Internal Server Error",
+                                            "type": "string",
+                                            "example": "Division by zero"
+                                        },
+                                        "file": {
+                                            "description": "Файл в котором произошла ошибка",
+                                            "type": "string",
+                                            "example": "/var/www/html/app/Http/Controllers/Api/V1/TestController.php"
+                                        },
+                                        "line": {
+                                            "description": "Строка на которой произошла ошибка",
+                                            "type": "integer",
+                                            "example": 71
+                                        },
+                                        "errors": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "file": {
+                                                        "description": "Файл в котором произошла ошибка",
+                                                        "type": "string",
+                                                        "example": "/var/www/html/app/Http/Controllers/Api/V1/TestController.php"
+                                                    },
+                                                    "line": {
+                                                        "description": "Строка на которой произошла ошибка",
+                                                        "type": "integer",
+                                                        "example": 21
+                                                    },
+                                                    "function": {
+                                                        "description": "Функция в которой произошла ошибка",
+                                                        "type": "string",
+                                                        "example": "bar"
+                                                    },
+                                                    "class": {
+                                                        "description": "Класс в котором произошла ошибка",
+                                                        "type": "string",
+                                                        "example": "BaClass"
+                                                    },
+                                                    "type": {
+                                                        "description": "Тип ошибки",
+                                                        "type": "string",
+                                                        "example": "->"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "NotFoundErrorResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractErrorResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Slug ошибки",
+                                "type": "string",
+                                "example": "NOT_FOUND"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "errors": {
+                                "description": "Описание ошибок",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "UnauthorizedErrorResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractErrorResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Slug ошибки",
+                                "type": "string",
+                                "example": "UNAUTHORIZED"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "errors": {
+                                "description": "Описание ошибок",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "UnprocessableEntityErrorResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractErrorResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Internal Server Error",
+                                "type": "string",
+                                "example": "UNPROCESSABLE_ENTITY"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "errors": {
+                                "description": "Описание ошибок",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "ValidationErrorResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractErrorResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Slug ошибки",
+                                "type": "string",
+                                "example": "VALIDATION_FAILED"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "errors": {
+                                "description": "Описание ошибок",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "ListResponseResource": {
+                "properties": {
+                    "result": {
+                        "description": "Slug Ответа",
+                        "type": "string",
+                        "example": "LIST"
+                    },
+                    "request_uuid": {
+                        "description": "Идентификатор запроса",
+                        "type": "string",
+                        "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                    },
+                    "data": {
+                        "description": "Данные",
+                        "type": "array",
+                        "items": {}
+                    }
+                },
+                "type": "object"
+            },
+            "PaginationListResponseResource": {
+                "properties": {
+                    "result": {
+                        "description": "Slug Ответа",
+                        "type": "string",
+                        "example": "LIST"
+                    },
+                    "request_uuid": {
+                        "description": "Идентификатор запроса",
+                        "type": "string",
+                        "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                    },
+                    "data": {
+                        "description": "Данные",
+                        "type": "array",
+                        "items": {}
+                    },
+                    "pagination": {
+                        "description": "Данные",
+                        "type": "array",
+                        "items": {
+                            "properties": {
+                                "total": {
+                                    "description": "Всего записей",
+                                    "type": "integer",
+                                    "example": "100500"
+                                },
+                                "count": {
+                                    "description": "Колисество выведенных записей",
+                                    "type": "integer",
+                                    "example": "13"
+                                },
+                                "per_page": {
+                                    "description": "Записей на странице",
+                                    "type": "integer",
+                                    "example": "15"
+                                },
+                                "current_page": {
+                                    "description": "Номер текущей страницы",
+                                    "type": "integer",
+                                    "example": "28"
+                                },
+                                "total_pages": {
+                                    "description": "Всего страниц",
+                                    "type": "integer",
+                                    "example": "28"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                },
+                "type": "object"
+            },
+            "CategoryResource": {
+                "properties": {
+                    "id": {
+                        "description": "ID категории",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Наименование категории товаров",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "Дата создания",
+                        "type": "string"
+                    },
+                    "updated_at": {
+                        "description": "Дата обновления",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "ProductResource": {
+                "properties": {
+                    "id": {
+                        "description": "ID категории",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "description": "Наименование категории товаров",
+                        "type": "string"
+                    },
+                    "price": {
+                        "description": "Цена",
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "category": {
+                        "description": "Категория товара",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/CategoryResource"
+                        }
+                    },
+                    "in_stock": {
+                        "description": "В наличии",
+                        "type": "string"
+                    },
+                    "rating": {
+                        "description": "Рейтинг",
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "description": "Дата создания",
+                        "type": "string"
+                    },
+                    "updated_at": {
+                        "description": "Дата обновления",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "ShowResponseResource": {
+                "properties": {
+                    "result": {
+                        "description": "Slug Ответа",
+                        "type": "string",
+                        "example": "SHOW"
+                    },
+                    "request_uuid": {
+                        "description": "Идентификатор запроса",
+                        "type": "string",
+                        "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                    },
+                    "data": {
+                        "description": "Данные",
+                        "type": "array",
+                        "items": {}
+                    }
+                },
+                "type": "object"
+            },
+            "AbstractSuccessResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractResponseResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Slug Ответа",
+                                "type": "string",
+                                "example": "SOME SLUG"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "data": {
+                                "description": "Данные",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "ResponseCreatedResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractSuccessResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Slug Ответа",
+                                "type": "string",
+                                "example": "CREATED"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "data": {
+                                "description": "Данные",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "ResponseDeletedResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractSuccessResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Slug Ответа",
+                                "type": "string",
+                                "example": "DELETED"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "data": {
+                                "description": "Данные",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "ResponseImportResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractResponseResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Slug Ответа",
+                                "type": "string",
+                                "example": "SUCCESS"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "data": {
+                                "description": "Данные",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            },
+                            "errors": {
+                                "description": "Ошибки",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "ResponseSuccessResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractSuccessResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Slug Ответа",
+                                "type": "string",
+                                "example": "SUCCESS"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "data": {
+                                "description": "Данные",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            },
+            "ResponseUpdatedResource": {
+                "type": "object",
+                "allOf": [
+                    {
+                        "$ref": "#/components/schemas/AbstractSuccessResource"
+                    },
+                    {
+                        "properties": {
+                            "result": {
+                                "description": "Slug Ответа",
+                                "type": "string",
+                                "example": "UPDATED"
+                            },
+                            "request_uuid": {
+                                "description": "Идентификатор запроса",
+                                "type": "string",
+                                "example": "3d46c93a-9a93-4510-b87d-3a29e4838c4f"
+                            },
+                            "data": {
+                                "description": "Данные",
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            }
+                        },
+                        "type": "object"
+                    }
+                ]
+            }
+        },
+        "parameters": {
+            "IndexRequest:page": {
+                "name": "page",
+                "in": "query",
+                "description": "Страница"
+            },
+            "IndexRequest:per_page": {
+                "name": "per_page",
+                "in": "query",
+                "description": "Записей на странице"
+            },
+            "IndexRequest:q": {
+                "name": "q",
+                "in": "query",
+                "description": "Фильтр: ?q[поле]=значение.\n *      Если в качестве поля указать full_text,\n *     то можно осуществлять полнотекстовый поиск по 'значение',\n *     там где он предусмотрен"
+            },
+            "IndexRequest:sort_field": {
+                "name": "sort_field",
+                "in": "query",
+                "description": "Поле сортировки"
+            },
+            "IndexRequest:sort_direction": {
+                "name": "sort_direction",
+                "in": "query",
+                "description": "Сортировка по возростанию (убыванию)"
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Категории",
+            "description": "Категории"
+        },
+        {
+            "name": "Товары",
+            "description": "Товары"
+        }
+    ]
+}
